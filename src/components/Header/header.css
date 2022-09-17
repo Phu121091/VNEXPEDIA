@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight:bold;
+}
+.menu{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 50px;
+
+}
+.menu a{
+    padding: 20px 20px;
+
+}
+.menu a:hover{
+   border-bottom:1px solid green ;
+   box-sizing: content-box;
+}
+
+.log{
+    width: 30%;
+}
+.log{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.log a{
+    padding: 20px 20px;
+}
+.signin{
+    border-right: 1px solid gray;
+}
+.post{
+    border: 1px solid grey;
+    border-radius: 8px;
+}

@@ -1,0 +1,12 @@
+.logohome p{
+    display: block;
+    padding: 0;
+    color: green;
+}
+.iconlogo{
+    font-size: 50px;
+    align-items: center;
+}
+.logohome{
+    width: 100px;
+}
