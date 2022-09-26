@@ -1,0 +1,57 @@
+.item-mini{
+    width: 800px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.item-mini img{
+    width: 180px;
+    height: 180px;
+}
+.item-mini-content{
+    padding-left:20px ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.des{
+    display: block;
+    display: -webkit-box;
+    height: 16px*1.3*3;
+    font-size: 16px;
+    line-height: 1.3;
+    -webkit-line-clamp: 3;  /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top:10px;
+
+}
+.item-mini-content p,div{
+    text-align: start;
+}
+.item-mini-content b{
+    color: darkgreen;
+}
+.end-mini{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.end-mini svg{
+    margin-right: 20px;
+}
+.end-mini button {
+    padding: 10px;
+    border: none;
+    background-color: dodgerblue;
+    color: aliceblue;
+    border-radius: 5px;
+}

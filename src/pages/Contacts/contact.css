@@ -1,0 +1,17 @@
+.ct-item{
+    width: 700px;
+    display: flex;
+    font-size: small;
+
+}
+.ct-item img{
+    width: 150px;
+    height: 150px;
+}
+.ct-main{
+    padding: 0 20px;
+}
+.local {
+    width: 300px;
+    font-size: small;
+}

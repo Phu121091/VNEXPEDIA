@@ -1,0 +1,27 @@
+.list-image img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.item-slide{
+    width: 600px;
+    height: 400px;
+    background-size:cover;
+}
+.slide-img-item{
+    width: 400px;
+}
+.react-slideshow-container{
+    margin: 20px auto;
+    width: 600px;
+    height: fit-content;
+    padding: 5px;
+}
+.main-infor{
+    width: 800px;
+    margin-left: 200px;
+
+}
+.main-infor p,h5,h3{
+    margin-top: 20px;
+}
