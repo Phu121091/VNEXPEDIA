@@ -19,3 +19,6 @@
 a{
   border: none;
 }
+svg,button{
+  cursor: pointer;
+}

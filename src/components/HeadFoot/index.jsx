@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import Header from "../Header/header";
 import Footer  from "../Footer/footer";
 
-// const Layouts = ({ children, isLogin, setIsLogin }) => {
+const UserContext = React.createContext({});
+
 const HeadFoot = ({children}) => {
+
+  const [username,setUsername] = useState("hello");
+  const change = () =>{
+    setUsername('hoho');
+  }
+  
+  console.log(username);
   return (
-    <div>
+    <UserContext.Provider value={{username,change}}>
       <Header/>
       {children}
       <Footer/>
 
-    </div>
+    </UserContext.Provider>
   )
 }
+
+export {UserContext};
+
 export default HeadFoot;

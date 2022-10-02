@@ -1,5 +1,6 @@
 import React from 'react';
 import Contactitem from './Contactitem';
+import ContactBoss from './Contactboss';
 
 const ContactList = [
   {
@@ -80,12 +81,72 @@ const ContactList = [
   },
 ]
 
+const Contactboss = [
+  {
+   logo:'https://file4.batdongsan.com.vn/2022/09/22/20220922082714-312d_wm.jpg',
+   name:'Công ty CP Tập đoàn Đất Nam'
+  },
+  {
+    logo:'https://file4.batdongsan.com.vn/2022/09/16/20220916111749-9d3f_wm.jpg',
+    name:'Công ty CP Golden City'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2022/09/13/20220913103506-7d7a_wm.jpg',
+    name:'Công ty CP Fifa Investment'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2022/08/23/20220823155803-911b_wm.jpg',
+    name:'Hoàng Phúc Land'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2022/02/14/20220214232805-eaef.jpg',
+    name:'Công ty CP Đầu tư và Xây dựng Tây Hồ'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2020/08/31/iFRzAx0S/20200831102750-5358.jpg',
+    name:'Công ty TNHH Thủy sinh 4U Việt Nam'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2020/09/28/PGsxuI1y/20200928152939-aa13.jpg',
+    name:'Công ty TNHH Đầu tư và xây dựng Hoàng Thổ Group'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2022/09/27/20220927171302-b4b2_wm.jpg',
+    name:'Công ty CP Dịch vụ địa ốc Hà Nội Starland'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2019/05/20/zk7ggeWN/20190520164019-5da7.jpg',
+    name:'Công ty TNHH Bắc Chương Dương'
+   },
+   {
+    logo:'https://file4.batdongsan.com.vn/2019/06/26/zk7ggeWN/20190626174121-947e.jpg',
+    name:'Công ty CP Bất động sản Khang Long'
+   }
+
+]
+
+
+
 const Contacts = () => {
   return (
-    <div>
+    <div className='main-ct'>
+      <div className='contact-nmg'>
+      <h3>Danh bạ nhà môi giới</h3>
+      <div>
       {ContactList.map((item)=>(
-        <Contactitem item={item}></Contactitem>
+        <Contactitem item={item}/>
       ))}
+      </div>
+      </div>
+
+      <div className='list-boss'>
+        <h3>Chủ đầu tư</h3>
+        <div className='main-list-boss'>
+          {Contactboss.map((item)=>(
+            <ContactBoss item={item}/>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

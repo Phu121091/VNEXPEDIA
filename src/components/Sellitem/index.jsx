@@ -11,7 +11,7 @@ const Sellitem = ({item}) => {
         <img src={item.image}></img> 
         <div className='item-mini-content'>
         <b>{item.title}</b>
-        <p>{item.area} {item.price}</p>
+        <p>{item.area}m2 - {item.price} tỉ</p>
         <div className='des'>{item.description}</div>
         <div className='end-mini'>
             <button>{item.phoneNumber}</button>

@@ -20,57 +20,47 @@
     border-top-left-radius: 5px ;
     border-top-right-radius: 5px ;
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(56, 75, 56);
 }
 .search-1 button:hover{
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(56, 75, 56);
 }
 .search-2{
-    width: 1000px;
-    background-color: darkgreen;
+    width: 800px;
+    background-color: rgb(56, 75, 56);
     padding: 10px;
     height: 91px;
+    position: relative;
 }
 .search-2 input{
     /* width: 300px; */
-    height: 30px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
-    position: relative;
-    flex: 1;
+    width: 100%;
 }
 .search-2 svg{
-    /* background-color: red;
-    height: 20px; */
+
     color: white;
-    
 
 }
-.search-2-input{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    justify-content: space-between;
-   
-}
-.search-2-input .search-2-icon{
-    margin: 5px;
+
+.search-2-icon{
     background-color: red;
     padding: 0 10px;
     color: white;
     border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    top:17px;
     cursor: pointer;
-    position:static;
-    float: right;
 }
 select{
     margin-top: 10px;
     border: 1px solid white;
     padding: 5px 30px;
-    background-color: darkgreen;
+    background-color: rgb(56, 75, 56);
     border-radius: 5px;
     color: white;
     margin-right: 20px;
