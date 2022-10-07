@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './style.css';
 import { useEffect,useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 
 const Signin = () => {
+  
+  const navigate = useNavigate();
 
   const [name,setName] = useState();
   const [email,setEmail] = useState();
@@ -29,6 +31,7 @@ const Signin = () => {
       'userName': `${name}`,
       'email':`${email}`,
       'password':`${pass}`,
+      'admin':true
     }
 
     const call = async()=>{
@@ -40,7 +43,14 @@ const Signin = () => {
     });
      console.log(response.status);
     
-     if (response.status==200) {toast.success('Tạo tài khoản thành công')};
+     if (response.status==200) {
+      toast.success('Tạo tài khoản thành công');
+      navigate("/log-in", { replace: true });
+    }
+     else {
+      toast.error('Tài khoản đã tồn tại');
+      return;
+     };
    }
     
    call();

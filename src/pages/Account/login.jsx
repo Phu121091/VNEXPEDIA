@@ -2,12 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 import {BsEyeSlash,BsEye} from 'react-icons/bs';
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../components/HeadFoot';
 
 const Login = () => {
+
+  const username = useContext(UserContext);
+
 
   const [email,setEmail] = useState();
   const [pass,setPass] = useState();
@@ -26,13 +30,15 @@ const Login = () => {
         data: user,
         type:'json'
     });
-     console.log(response.data.token);
+     console.log(response.data);
      if (response.status==200) {toast.success('Đăng nhập  thành công')};
+     username.change(response.data);
    }
     
    call();
-   localStorage.setItem("currentUser", JSON.stringify(user));
-   navigate("/log-in", { replace: true });
+  //  localStorage.setItem("currentUser", JSON.stringify(user));
+   
+   navigate("/", { replace: true });
   }
 
   return (

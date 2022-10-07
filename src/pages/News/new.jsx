@@ -36,7 +36,7 @@ const New = () => {
     <div>
         <h3>{itemcall.title}</h3>
         <img src={itemcall.image}/>
-        <p>{itemcall.description}</p>
+        <p>{itemcall.description}</p> 
     </div>
   )
 }

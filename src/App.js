@@ -16,6 +16,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import New from "./pages/News/new";
 import Newitem from "./pages/News/news";
+import User from "./pages/User";
+import CreatePost from "./pages/Post";
 
 
 
@@ -37,8 +39,10 @@ function App() {
       <Route path="/Tin" element={<Newitem/>}>
       <Route path=":id" element={<New/>} />
       </Route>
+      <Route path="/User" element={<User/>}/>
       <Route path="/Dangki" element={<Signin/>}/>
       <Route path="/Dangnhap" element={<Login/>}/>
+      <Route path="/Dangtin" element={<CreatePost/>}/>
       </Routes>
       </HeadFoot>
       </BrowserRouter>

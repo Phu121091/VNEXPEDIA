@@ -3,8 +3,9 @@ import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
 import LogoHome from '../Logo';
 import SearchC from "../Search";
 import {BsSuitHeart,BsPerson} from 'react-icons/bs';
+import {GrUserAdmin} from 'react-icons/gr';
 import './header.css';
-import {UserContext} from '../HeadFoot';
+import { UserContext } from '../HeadFoot';
 
 
 
@@ -13,24 +14,13 @@ const Header = () => {
   const username = useContext(UserContext);
   console.log(username);
 
-  const [currentUser, setCurrentUser] = useState(null);
+  // const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {
-    let current = localStorage.getItem("currentUser")
-      ? JSON.parse(localStorage.getItem("currentUser"))
-      : null;
-    if (current) {
-      setCurrentUser(current);
-    } else {
-      setCurrentUser(null);
-    }
-    console.log(currentUser);
-  }, [location]);
 
   const handleLogout = () => {
-    localStorage.removeItem("currentUser");
+    username.change(null);
     navigate("/log-in", { replace: true });
   };
 
@@ -71,14 +61,16 @@ const Header = () => {
       </NavLink>
       </div>
       
-      { currentUser ?
+      
+      { username.username ?
       (
         <div className="log">
+          
           <BsSuitHeart/>
-          <BsPerson/>
-          <Link  className="sign">{currentUser.email}</Link>
+          {username.username.admin?<GrUserAdmin/>:<BsPerson/>}
+          <Link to='/User' className="sign">{username.username.userName}</Link>
           <button className="logout" onClick={handleLogout}>Đăng xuất</button>
-          <Link to="/" className="post" >Đăng tin</Link>
+          <Link to="/Dangtin" className="post" >Đăng tin</Link>
         </div>
 
       ) :
