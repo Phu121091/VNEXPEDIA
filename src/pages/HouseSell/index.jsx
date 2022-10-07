@@ -12,35 +12,27 @@ const HouseSell = () => {
     const [sellList, setSellList] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const filterObj = useContext(UserContext);
-
-    const callApi =async()=>{
-        setIsLoading(true);
- 
-        // const response = await axios({
-        //     method: 'get',
-        //     url: 'https://server-real-estate.herokuapp.com/api/v1/posts',
-        //     type: 'json'
-        // });
-
-        HTTP.get('api/v1/posts')
-        .then((response) => {
-          if(response.status === 200){
-            setSellList(response.data)
-          }
-        })
- 
-         if(response.status === 200){
-             setSellList(response.data.filter(d => d.sale_or_rent =='sale'))
-         }
-         console.log(sellList);
-         setIsLoading(false);     
-     }
- 
-     useEffect(()=>{
-         callApi();
-         
-         
-     },[]);
+  
+      const callApi =async()=>{
+          setIsLoading(true);
+   
+           const response = await axios({
+               method: 'get',
+               url: 'https://server-real-estate.herokuapp.com/api/v1/posts',
+               type: 'json'
+           });
+   
+           if(response.status === 200){
+               setSellList(response.data.filter(d => d.sale_or_rent =='sale'))
+           }
+           console.log(sellList);
+           setIsLoading(false);     
+       }
+   
+       useEffect(()=>{
+           callApi();    
+           
+       },[]);
     //  const filterlist = sellList.filter((item) => item.name.toLowerCase().indexOf((filterObj.filtervalue.inputvalue).toLowerCase()) > -1).filter(a => a.city==filterObj.filtervalue.local1);
      console.log(sellList);
 
