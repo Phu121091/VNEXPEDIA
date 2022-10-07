@@ -35,6 +35,7 @@ function App() {
       <Route path="/Duan" element={<Project />} />
       <Route path="/Tintuc" element={<News />} />
       <Route path="/Danhba" element={<Contacts />} />
+      <Route path="/Create_New_Post" element={<CreatePost />} />
       <Route path=":id" element={<InforItem />} />
       <Route path="/Tin" element={<Newitem/>}>
       <Route path=":id" element={<New/>} />
