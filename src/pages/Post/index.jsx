@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+import React, { useState,useContext,useEffect } from "react";
+import { UserContext } from '../../components/HeadFoot';
+import axios from "axios";
 
 import './CreatePost.css'
 
@@ -8,6 +10,29 @@ const CreatePost = () => {
     const [address, setAddress] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const user = useContext(UserContext);
+    const token = user.username.token;
+    
+    const createP = async() => {
+        const data = {
+            'sale_or_rent':`${sale_or_rent}`,
+            'categories':`${categories}`,
+            'address':`${address}`,
+            'title':`${title}`,
+            'description':`${description}`
+        }
+        
+        const response = await axios({
+          method: 'post',
+          url: `https://server-real-estate.herokuapp.com/api/v1/posts/news`,
+          data: data,        
+          headers: {
+            'Authorization': `Bear ${token}` 
+          }
+      });
+
+ }
+
     return (
         <>
             <div className="create--post">
@@ -106,7 +131,9 @@ const CreatePost = () => {
                             </div>
                         </div>
                     </div>
+                    <button onClick={()=>createP()}>Đăng bài</button>
                 </div>
+                     
             </div>
         </>
     )

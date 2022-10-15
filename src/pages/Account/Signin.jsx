@@ -30,8 +30,7 @@ const Signin = () => {
     const newUser = {
       'userName': `${name}`,
       'email':`${email}`,
-      'password':`${pass}`,
-      'admin':true
+      'password':`${pass}`
     }
 
     const call = async()=>{

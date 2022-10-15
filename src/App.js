@@ -18,6 +18,9 @@ import New from "./pages/News/new";
 import Newitem from "./pages/News/news";
 import User from "./pages/User";
 import CreatePost from "./pages/Post";
+import Sellfind from "./pages/Find/Sellfind";
+import Rentfind from "./pages/Find/Rentfind";
+
 
 
 
@@ -40,6 +43,8 @@ function App() {
       <Route path="/Tin" element={<Newitem/>}>
       <Route path=":id" element={<New/>} />
       </Route>
+      <Route path="/Timkiemban" element={<Sellfind/>}/>
+      <Route path="/Timkiemthue" element={<Rentfind/>}/>
       <Route path="/User" element={<User/>}/>
       <Route path="/Dangki" element={<Signin/>}/>
       <Route path="/Dangnhap" element={<Login/>}/>

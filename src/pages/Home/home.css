@@ -1,3 +1,20 @@
 .each-slide{
-    height: 200px;
+    width: 1000px;
 }
+.homelist h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right,gray 10%, white);
+}
+.homemainlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeimg{
+    display: flex;
+    justify-content: center;
+}
+

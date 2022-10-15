@@ -3,11 +3,13 @@ import { useEffect,useState,useContext } from 'react';
 import { UserContext } from '../../components/HeadFoot';
 import {BiSearchAlt} from "react-icons/bi";
 import './search.css';
+import { useNavigate } from 'react-router-dom';
 
 const SearchC = () => {
   const [hover, setHover] = useState(['on','off','off','off']);
   const [local1,setlocal1]= useState();
   const [cost1,setcost1] = useState();
+  const navigate = useNavigate();
   
   const [inputvalue,setinputvalue] = useState();
   console.log(inputvalue);
@@ -15,6 +17,8 @@ const SearchC = () => {
   const filerObj = useContext(UserContext);
   const setfil = () =>{
     filerObj.setfilter({hover,local1,cost1,inputvalue});
+    if (hover[0]=='on') navigate("/Timkiemban", { replace: true });
+    if (hover[1]=='on') navigate("/Timkiemthue", { replace: true });
     
   } 
 
