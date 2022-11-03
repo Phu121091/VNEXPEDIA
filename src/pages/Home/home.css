@@ -17,4 +17,26 @@
     display: flex;
     justify-content: center;
 }
+.react-slideshow-container{
+    width: 100vh;
+}
+
+.suggest-tour{
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.suggest-title{
+    font-style: italic;
+    font-family: 'Shalimar', cursive;
+    font-size: 110px;
+}
+.suggest-main{
+    font-family: 'Shalimar', cursive;
+    font-size: 32px;
+    font-style: oblique;
+}
 

@@ -1,0 +1,20 @@
+.slide-item1{
+    background-image: url('../../data/images/banner/2.jpg');
+    background-size: cover;
+}
+.slide-item2{
+    background-image: url('../../data/images/banner/3.jpg');
+    background-size: cover;
+}
+.slide-item3{
+    background-image: url('../../data/images/banner/4.jpg');
+    background-size: cover;
+}
+.slide-item4{
+    background-image: url('../../data/images/banner/5.jpg');
+    background-size: cover;
+}
+.slide-item5{
+    background-image: url('../../data/images/banner/6.jpg');
+    background-size: cover;
+}

@@ -2,10 +2,12 @@ import React, { useEffect ,useState ,useContext } from "react";
 import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
 import LogoHome from '../Logo';
 import SearchC from "../Search";
-import {BsSuitHeart,BsPerson} from 'react-icons/bs';
+import {BsSuitHeart,BsPerson,BsHeart} from 'react-icons/bs';
 import {GrUserAdmin} from 'react-icons/gr';
 import './header.css';
 import { UserContext } from '../HeadFoot';
+import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
+import logoicon from './../Logo/logo-alt.png';
 
 
 
@@ -30,35 +32,58 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="header-top">    
-      <NavLink to="/" id='logo'>
-      <LogoHome/>
-      </NavLink>
+      <div className="header-top">   
 
-      <SearchC/>
+      <Link to="/" id='logo'>
+      <img src={logoicon}></img>
+      </Link>
+
+      <div className="header-top-mid">
+       <img src='https://th.bing.com/th/id/OIP.sfeXXVKmqZ6gjP5Tx3ZaEQHaE7?pid=ImgDet&rs=1'></img>
+       <p>VietNamese</p>
+       <p>MyAudley</p>
+       <BsHeart/>
+      </div>
+
+      <div className="callus">
+        <button>BUY A TRIP</button>
+        <p>Call Us : 0354865073</p>
+      </div>
+
       </div>
 
       <div className="header-bot">
       <div className="menu">
-      <NavLink to="/nhadatban" className={handleActive} >
-        Nhà đất bán
+        <div className="menu-li">
+      <NavLink to="/" className={handleActive} >
+        Destinations
       </NavLink>
-
-      <NavLink to="/nhadatchothue" className={handleActive}>
-        Nhà đất cho thuê
+      <IoIosArrowDown/>
+      </div>
+      <div className="menu-li">
+      <NavLink to="/TravelStyles" className={handleActive}>
+        Travel Styles
       </NavLink>
-
-      <NavLink to="/duan" className={handleActive}>
-        Dự án
+      <IoIosArrowDown/>
+      </div>
+      <div className="menu-li">
+      <NavLink to="/SpecialDeals" className={handleActive}>
+        Special Deals
       </NavLink>
-
-      <NavLink to="/tintuc" className={handleActive}>
-        Tin tức
+      <IoIosArrowDown/>
+      </div>
+      <div className="menu-li">
+      <NavLink to="/About" className={handleActive}>
+        About
       </NavLink>
-
-      <NavLink to="/danhba" className={handleActive}>
-        Danh bạ
+      <IoIosArrowDown/>
+      </div>
+      <div className="menu-li">
+      <NavLink to="/News" className={handleActive}>
+        News
       </NavLink>
+      <IoIosArrowDown/>
+      </div>
       </div>
       
       
@@ -76,9 +101,12 @@ const Header = () => {
       ) :
       (
         <div className="log">
-        <Link to="/Dangki" className="sign">Đăng kí</Link>
-        <Link to="/Dangnhap" className="login">Đăng nhập</Link>
+        {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
+        <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
+        <Link to='/' >For User</Link>
+        <IoIosArrowForward/>
         </div>
+        
       )
       }
       

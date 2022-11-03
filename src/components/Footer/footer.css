@@ -1,5 +1,58 @@
 .footer{
-    height: 200px;
-    background-color: rgb(181, 208, 135);
-    padding: 20px;
+  background-image: url('../../data/images/banner/desert.jpg');
+  background-size: cover;
+  height: 600px;
+}
+
+/* listlogo css */
+.list-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.lg{
+    width: 150px;
+    height: 150px;
+}
+.lg img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer hr{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* main css */
+.main-footer{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.list-north h1,.list-north p,.list-mid h1,.list-mid p,.list-south h1,.list-south p{
+    color: white;
+}
+
+/* logo css */
+.logo-icon{
+    width: 150px;
+    height: 150px;
+}
+.logo-icon img{
+    width: 100%;
+    height:100%;
+}
+
+.end-footer{
+    margin-top: 5%;
+}
+.end-footer p{
+    text-align: center;
 }
