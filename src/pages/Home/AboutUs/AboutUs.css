@@ -1,13 +1,10 @@
 .aboutus {
-    background-image: url('./../../../data/images/banner/sea.jpg');
-    background-size: cover;
     padding-bottom: 5%;
-    padding-top: 5%;
-	  
+    padding-top: 5%;	  
   }
   .aboutus h1 {
     padding-left: 17%;
-    color: white;
+    color: black;
     font-size: 160px;
     font-family: 'Shalimar', cursive;
     position: relative;
@@ -23,6 +20,7 @@
     margin-left: 10%;
     background-color: rgb(247, 242, 233);
     padding: 20px;
+    border: 1px solid rgb(111, 86, 86);
   }
   .aboutus-border {
     border: dashed rgb(101, 48, 48);
@@ -40,16 +38,16 @@
   .hr1 {
     margin-left: 10%;
     width: 40%;
-    border : 1px solid white;
+    border : 1px solid black;
     margin-bottom: 2%;
-    color:white;
+    color:black;
     opacity:1;
   }
   .hr2 {
     margin-right: 10%;
     margin-top: 2%;
-    border : 1px solid white;
-    color:white;
+    border : 1px solid black;
+    color:black;
     opacity:1;
   }
 

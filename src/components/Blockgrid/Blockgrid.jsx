@@ -15,7 +15,6 @@ const Blockgrid = () => {
         <div className="blockgrid">
           <div className="grid1">
             <BlockcardStyle className="itembig b1">
-              {/* <Blockcard data={data[0]} /> */}
               <h1>Classic</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -23,7 +22,6 @@ const Blockgrid = () => {
               </div>
             </BlockcardStyle>
             <BlockcardStyle className="itemsmall s1">
-              {/* <Blockcard data={data[1]} /> */}
               <h1>Family</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -33,7 +31,6 @@ const Blockgrid = () => {
           </div>
           <div className="grid1">
             <BlockcardStyle className="itemsmall s2">
-              {/* <Blockcard data={data[2]} /> */}
               <h1>Beach</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -41,7 +38,6 @@ const Blockgrid = () => {
               </div>
             </BlockcardStyle>
             <BlockcardStyle className="itemsmall s3">
-              {/* <Blockcard data={data[3]} /> */}
               <h1>Short trips</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -49,7 +45,6 @@ const Blockgrid = () => {
               </div>
             </BlockcardStyle>
             <BlockcardStyle className="itemsmall s4">
-              {/* <Blockcard data={data[4]} /> */}
               <h1>Culinary</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -59,7 +54,6 @@ const Blockgrid = () => {
           </div>
           <div className="grid1">
             <BlockcardStyle className="itemsmall s5">
-              {/* <Blockcard data={data[5]} /> */}
               <h1>Adventure</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>
@@ -67,7 +61,6 @@ const Blockgrid = () => {
               </div>
             </BlockcardStyle>
             <BlockcardStyle className="itembig b2">
-              {/* <Blockcard data={data[6]} /> */}
               <h1>Cruise</h1>
               <div className='item-content'>
               <p>Hạ Long Bay</p>

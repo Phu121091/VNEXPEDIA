@@ -15,8 +15,6 @@ const AboutUsDefault = styled.div`
       animation-fill-mode: forwards;
     }
   .aboutus {
-    background-image: url('./../../../data/images/banner/sea.jpg');
-    background-size: cover;
     padding-bottom: 5%;
     padding-top: 5%;
 	  
