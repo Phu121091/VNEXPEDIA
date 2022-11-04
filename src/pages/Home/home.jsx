@@ -13,6 +13,7 @@ import Special from './Special/Special';
 import Review from './Review/Review';
 import AseanMap from './AseanMap/AseanMap';
 import Search from './Search/Search';
+import Datepicker from './DatePicker/Datepicker';
   
 const Home = () => {
 
@@ -58,6 +59,7 @@ const Home = () => {
           <SlideBig/>
           <Search id='search'/>
         </div>
+        <Datepicker/>
         
 
 {/* Suggest tour */}
@@ -96,7 +98,7 @@ const Home = () => {
       <hr className='hr'/>
       <AseanMap/>
       <hr className='hr'/>
-      <Review/>
+      {/* <Review/> */}
       <hr className='hr'/>
       <AboutUs/>
       <Whychoose/>

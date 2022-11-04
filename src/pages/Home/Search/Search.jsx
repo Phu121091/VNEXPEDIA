@@ -4,6 +4,7 @@ import  {MdOutlineMyLocation} from 'react-icons/md';
 import  {BsCalendar} from 'react-icons/bs';
 import  {BsFillPeopleFill} from 'react-icons/bs';
 import './Search.css';
+import Datepicker from '../DatePicker/Datepicker';
 
 const Search = () => {
   return (
@@ -17,9 +18,9 @@ const Search = () => {
         <hr className='line'/>
         <div className='date-pick'>
             <BsCalendar className='icons'/>
-            <input className='date-in' placeholder='Start Date'/>
+            <Datepicker className='date-in' placeholder='Start Date'/>
             -
-            <input className='date-out' placeholder='End Date'/>
+            <Datepicker className='date-out' placeholder='End Date'/>
         </div>
         <hr className='line'/>
         <div className='pick-number'>

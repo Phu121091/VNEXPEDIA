@@ -26,7 +26,7 @@
 }
 #search{
     position: absolute;
-    top:30%;
+    bottom:100%;
 }
 
 .suggest-tour{
@@ -43,8 +43,8 @@
     font-size: 110px;
 }
 .suggest-main{
-    font-family: 'Shalimar', cursive;
-    font-size: 32px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 26px;
     font-style: oblique;
 }
 .hr{
