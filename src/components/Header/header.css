@@ -1,17 +1,23 @@
-
+.header{
+    position: relative;
+}
 a{
     text-decoration: none;
     color: white;
     font-weight:bold;
 }
 .header-top{
-    margin-top: 10px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid darkgreen;
     padding-bottom: 10px;
     height:80px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 100;
     
 }
 #logo {
@@ -67,6 +73,7 @@ a{
     border-radius: 5px;
 }
 .header-bot{
+    margin-top: 80px;
     background-color: #4d726d;
     display: flex;
     flex-direction: row;
@@ -100,10 +107,17 @@ a{
 }
 .menu-li svg{
     color: white;
+    transition: 0.5s;
 }
 .menu-li:hover{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     background-color: #699d95;
+}
+.menu-li:hover svg{   
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
 }
 
 .log{
@@ -145,3 +159,46 @@ a{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
    background-image: url('./../Logo/logo-alt.png')
 } */
+.menu-li:hover .list-hidden{
+    display: flex;
+}
+.list-hidden{
+    display:none;
+    padding: 1% 3%;
+    width: 65%;
+    position: absolute;
+    top: 101%;
+    z-index: 10;
+    background-color: #4d726d;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition: 1s;   
+}
+.list-hidden a{
+    margin:10px 0px ;
+    color: white;
+}
+.list-mini{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list-mini a{
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+    margin-right: 5px;
+    border: 1px solid white;
+}
+.list-1{
+    left: 15%;
+    width: 65%;
+}
+.list-2{
+    left: 26.8%;
+    width: 15%;
+}

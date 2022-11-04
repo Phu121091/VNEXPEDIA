@@ -1,0 +1,10 @@
+.slide-review{
+    background-color: white;
+}
+.slide-review p{
+    color: black;
+}
+.slide-review-container{
+    width: 50%;
+    margin: 0 auto;
+}

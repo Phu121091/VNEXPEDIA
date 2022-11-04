@@ -17,12 +17,20 @@
     display: flex;
     justify-content: center;
 }
+.slide-container{
+    position: relative;
+    width: 100%;
+}
 .react-slideshow-container{
     width: 100vh;
 }
+#search{
+    position: absolute;
+    top:30%;
+}
 
 .suggest-tour{
-    margin: 10% auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,4 +47,10 @@
     font-size: 32px;
     font-style: oblique;
 }
-
+.hr{
+    width: 70%;
+    border: 2px solid rgb(41, 91, 41);
+    color: rgb(41, 91, 41);
+    border-radius: 50%;
+    margin: 0 auto;
+}

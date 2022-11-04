@@ -8,6 +8,11 @@ import Sellitem from '../../components/Sellitem';
 import SlideBig from './Slide';
 import Blockgrid from '../../components/Blockgrid/Blockgrid';
 import AboutUs from './AboutUs/AboutUs';
+import Whychoose from './Whychoose/Whychoose';
+import Special from './Special/Special';
+import Review from './Review/Review';
+import AseanMap from './AseanMap/AseanMap';
+import Search from './Search/Search';
   
 const Home = () => {
 
@@ -48,11 +53,14 @@ const Home = () => {
 
   return (
     <div> 
-
+ {/* Slide head  */}
         <div className="slide-container">
           <SlideBig/>
+          <Search id='search'/>
         </div>
+        
 
+{/* Suggest tour */}
         <div className='suggest-tour'>
         <div className="suggest-title">Suggested Simples Tours</div>
       <p className="suggest-main">
@@ -66,8 +74,32 @@ const Home = () => {
         <Blockgrid />
       </div>
       </div>
-        
+
+      <hr className='hr'/>
+
+{/* Special tour */}
+      <div className='suggest-tour'>
+        <div className="suggest-title">Special Tour</div>
+      <p className="suggest-main">
+      We know that every traveller is different, so our experts have
+          meticulously designed different Vietnam touring styles to help you
+          explore Vietnam in a way that suits you the best. Want to see the
+          highlights of Vietnam, take a look on our Classic Vietnam Tours; want
+          to have unforgettable experiences with your children, Vietnam Family
+          Tours can't be missed; want to soak up the sun-and-sea, choose one
+          best beach tour from our Vietnam Beach Holidays theme. No matter what
+          kind of traveller you are, our Best Vietnam Tours by Styles collection
+          got a tour (or probably dozen) that will fit you just right.
+      </p>
+      </div>
+      <Special/>
+      <hr className='hr'/>
+      <AseanMap/>
+      <hr className='hr'/>
+      <Review/>
+      <hr className='hr'/>
       <AboutUs/>
+      <Whychoose/>
 
     </div>
   )

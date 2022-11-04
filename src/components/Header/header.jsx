@@ -12,11 +12,11 @@ import logoicon from './../Logo/logo-alt.png';
 
 
 const Header = () => {
+
   
   const username = useContext(UserContext);
   console.log(username);
 
-  // const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -54,18 +54,72 @@ const Header = () => {
 
       <div className="header-bot">
       <div className="menu">
-        <div className="menu-li">
+        <div className="menu-li" id='list1'>
       <NavLink to="/" className={handleActive} >
         Destinations
       </NavLink>
       <IoIosArrowDown/>
+      <div className="list-hidden list-1">
+        <div className="list-country">
+        <Link>Viet Nam</Link>
+        <div className="list-mini">
+        <Link>Ha Noi</Link>
+        <Link>SaPa - Lao Cai</Link>
+        <Link>Ha Long</Link>
+        <Link>Tay Nguyen</Link>
+        <Link>Da Nang</Link>
+        <Link>Sai Gon</Link>
+        <Link>Hai Phong</Link>
+        <Link>Binh Lieu</Link>
+        <Link>Hue</Link>
+        <Link>Vung Tau</Link>
+        </div>
+        </div>
+
+        <div className="list-country">
+        <Link>Lao</Link>
+        <div className="list-mini">
+        <Link>Luang Prabang</Link>
+        <Link>Viang Chan</Link>
+        </div>
+        </div>
+
+        <div className="list-country">
+        <Link>Thai Lan</Link>
+        <div className="list-mini">
+        <Link>Bangkok</Link>
+        <Link>Koh Panyee</Link>
+        <Link>Pattaya</Link>
+        </div>
+        </div>
+
+        <div className="list-country">
+        <Link>Campuchia</Link>
+        <div className="list-mini">
+        <Link>Angkor Wat, Angkor Thom</Link>
+        <Link>Phnom Penh</Link>
+        <Link>Battambang</Link>
+        </div>
+        </div>
+
+      </div>
       </div>
       <div className="menu-li">
       <NavLink to="/TravelStyles" className={handleActive}>
         Travel Styles
       </NavLink>
       <IoIosArrowDown/>
+      <div className="list-hidden list-2">
+        <a>CLASSIC</a>
+        <a>FAMILY</a>
+        <a>BEACH</a>
+        <a>SHORT TRIPS</a>
+        <a>CULINARY</a>
+        <a>ADVENTURE</a>
+        <a>CRUISES</a>
       </div>
+      </div>
+
       <div className="menu-li">
       <NavLink to="/SpecialDeals" className={handleActive}>
         Special Deals
@@ -109,7 +163,7 @@ const Header = () => {
         
       )
       }
-      
+
       </div>
      
     </div>
