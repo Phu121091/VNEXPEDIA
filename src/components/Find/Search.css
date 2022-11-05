@@ -6,6 +6,7 @@
     position: absolute;
     top:40%;
     left:15%;
+    z-index: 1;
 }
 .search-main{
     background: white;

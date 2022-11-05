@@ -6,9 +6,9 @@ import  {BsFillPeopleFill} from 'react-icons/bs';
 import './Search.css';
 import Datepicker from '../DatePicker/Datepicker';
 
-const Search = () => {
+const Search = ({id}) => {
   return (
-    <div className='search-container'>
+    <div className='search-container' id={id}>
        <form className='search-main'>
         <div className='search-area'>
             <ImLocation2 className='icons'/>

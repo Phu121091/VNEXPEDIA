@@ -60,3 +60,21 @@
     border-radius: 50%;
     margin: 0 auto;
 }
+
+.slide-text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    
+}
+.st-h1,.st-p{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+}
+.st-h1{
+    font-size: 80px;
+}
+.st-p{
+    font-size: 30px;
+}
