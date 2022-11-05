@@ -1,20 +1,41 @@
 .slide-item1{
     background-image: url('../../data/images/banner/2.jpg');
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
+    animation: zoom 12s infinite;
 }
 .slide-item2{
     background-image: url('../../data/images/banner/3.jpg');
     background-size: cover;
+    background-position: center;
+    animation: zoom 12s infinite;
 }
 .slide-item3{
     background-image: url('../../data/images/banner/4.jpg');
     background-size: cover;
+    background-position: center;
+    animation: zoom 12s infinite;
 }
 .slide-item4{
     background-image: url('../../data/images/banner/5.jpg');
     background-size: cover;
+    background-position: center;
+    animation: zoom 12s infinite;
 }
 .slide-item5{
     background-image: url('../../data/images/banner/6.jpg');
     background-size: cover;
+    background-position: center;
+    animation: zoom 12s infinite;
+}
+@keyframes zoom{
+    0%{
+        transform:none;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform:none;
+    }
 }

@@ -8,12 +8,16 @@ import './header.css';
 import { UserContext } from '../HeadFoot';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
 import logoicon from './../Logo/logo-alt.png';
+import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
+import Search from "../Find/Search";
+
 
 
 
 const Header = () => {
 
-  
+  const [showfind,setshowfind]=useState('show');
+
   const username = useContext(UserContext);
   console.log(username);
 
@@ -30,9 +34,15 @@ const Header = () => {
     return isActive && "active";
   };
 
+  const ShowFind = () => {
+    if (showfind=='show'){
+      setshowfind('hidden')
+    } else setshowfind('show')
+  }
+
   return (
     <div className="header">
-      <div className="header-top">   
+      {/* <div className="header-top">   
 
       <Link to="/" id='logo'>
       <img src={logoicon}></img>
@@ -50,7 +60,7 @@ const Header = () => {
         <p>Call Us : 0354865073</p>
       </div>
 
-      </div>
+      </div> */}
 
       <div className="header-bot">
       <div className="menu">
@@ -140,6 +150,17 @@ const Header = () => {
       </div>
       </div>
       
+      <div className="phone-find-container" onClick={()=>ShowFind()}>
+        <div className="find-container">
+        <FaSearchLocation className="header-icon"/>
+        <button type='text' className="find-btn">Search</button>
+        </div>
+        <div className="phone-container">
+          <FaPhoneAlt className="header-icon"/>
+          <span>03.548.65073</span>
+        </div>
+
+      </div>
       
       { username.username ?
       (
@@ -162,10 +183,15 @@ const Header = () => {
         </div>
         
       )
-      }
+      }     
 
       </div>
-     
+      {/* <div className="find-area" id={showfind}>
+        <p>Search: </p>
+        <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
+      </div> */}
+      <Search id={showfind}/>
+    
     </div>
   )
 }

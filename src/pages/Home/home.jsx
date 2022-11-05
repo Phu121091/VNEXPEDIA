@@ -12,8 +12,6 @@ import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
 import Review from './Review/Review';
 import AseanMap from './AseanMap/AseanMap';
-import Search from './Search/Search';
-import Datepicker from './DatePicker/Datepicker';
   
 const Home = () => {
 
@@ -57,9 +55,11 @@ const Home = () => {
  {/* Slide head  */}
         <div className="slide-container">
           <SlideBig/>
-          <Search id='search'/>
+          <div className='slide-text'>
+            <h1 className='st-h1'>VNXpedia</h1>
+            <p className='st-p'>Best website for travel !</p>
+          </div>
         </div>
-        <Datepicker/>
         
 
 {/* Suggest tour */}
@@ -99,7 +99,6 @@ const Home = () => {
       <AseanMap/>
       <hr className='hr'/>
       {/* <Review/> */}
-      <hr className='hr'/>
       <AboutUs/>
       <Whychoose/>
 

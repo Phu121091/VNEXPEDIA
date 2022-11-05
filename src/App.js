@@ -48,7 +48,7 @@ function App() {
       <Route path="/User" element={<User/>}/>
       <Route path="/Dangki" element={<Signin/>}/>
       <Route path="/Dangnhap" element={<Login/>}/>
-      <Route path="/Dangtin" element={<CreatePost/>}/>
+      {/* <Route path="/Dangtin" element={<CreatePost/>}/> */}
       </Routes>
       </HeadFoot>
       </BrowserRouter>
