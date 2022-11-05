@@ -12,8 +12,8 @@ import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
 // import Review from './Review/Review';
 import AseanMap from './AseanMap/AseanMap';
-import Search from './Search/Search';
-import Datepicker from './DatePicker/Datepicker';
+import Search from '../../components/Find/Search';
+import Datepicker from '../../components/DatePicker/Datepicker';
 import OurStory from './Ourstory/Ourstory';
   
 const Home = () => {
@@ -58,11 +58,7 @@ const Home = () => {
  {/* Slide head  */}
         <div className="slide-container">
           <SlideBig/>
-          <Search id='search'/>
         </div>
-        <Datepicker/>
-        
-
 {/* Suggest tour */}
         <div className='suggest-tour'>
         <div className="suggest-title">Suggested Simples Tours</div>
