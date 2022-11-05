@@ -47,6 +47,12 @@
     font-size: 26px;
     font-style: oblique;
 }
+.suggest-main-title{
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 26px;
+    font-style: oblique;
+}
 .hr{
     width: 70%;
     border: 2px solid rgb(41, 91, 41);

@@ -1,19 +1,20 @@
 import React from 'react';
 import 'react-slideshow-image/dist/styles.css';
-import { Slide } from 'react-slideshow-image';
+// import { Slide } from 'react-slideshow-image';
 import './home.css';
-import { useEffect,useState,useContext } from 'react';
-import axios from "axios";
-import Sellitem from '../../components/Sellitem';
+// import { useEffect,useState,useContext } from 'react';
+// import axios from "axios";
+// import Sellitem from '../../components/Sellitem';
 import SlideBig from './Slide';
 import Blockgrid from '../../components/Blockgrid/Blockgrid';
-import AboutUs from './AboutUs/AboutUs';
+// import AboutUs from './AboutUs/AboutUs';
 import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
-import Review from './Review/Review';
+// import Review from './Review/Review';
 import AseanMap from './AseanMap/AseanMap';
 import Search from './Search/Search';
 import Datepicker from './DatePicker/Datepicker';
+import OurStory from './Ourstory/Ourstory';
   
 const Home = () => {
 
@@ -78,11 +79,11 @@ const Home = () => {
       </div>
 
       <hr className='hr'/>
-
+      <OurStory/>
 {/* Special tour */}
       <div className='suggest-tour'>
         <div className="suggest-title">Special Tour</div>
-      <p className="suggest-main">
+      <p className="suggest-main-title">
       We know that every traveller is different, so our experts have
           meticulously designed different Vietnam touring styles to help you
           explore Vietnam in a way that suits you the best. Want to see the
@@ -100,7 +101,8 @@ const Home = () => {
       <hr className='hr'/>
       {/* <Review/> */}
       <hr className='hr'/>
-      <AboutUs/>
+      {/* <AboutUs/> */}
+      
       <Whychoose/>
 
     </div>
