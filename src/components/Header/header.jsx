@@ -1,29 +1,23 @@
-import React, { useEffect ,useState ,useContext } from "react";
-import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
-import LogoHome from '../Logo';
+import React, { useEffect, useState, useContext } from "react";
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
+import LogoHome from "../Logo";
 import SearchC from "../Search";
-import {BsSuitHeart,BsPerson,BsHeart} from 'react-icons/bs';
-import {GrUserAdmin} from 'react-icons/gr';
-import './header.css';
-import { UserContext } from '../HeadFoot';
-import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
-import logoicon from './../Logo/logo-alt.png';
-import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
+import { BsSuitHeart, BsPerson, BsHeart } from "react-icons/bs";
+import { GrUserAdmin } from "react-icons/gr";
+import "./header.css";
+import { UserContext } from "../HeadFoot";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { FaSearchLocation, FaPhoneAlt } from "react-icons/fa";
 import Search from "../Find/Search";
 
-
-
-
 const Header = () => {
-
-  const [showfind,setshowfind]=useState('show');
+  const [showfind, setshowfind] = useState("show");
 
   const username = useContext(UserContext);
   console.log(username);
 
   const navigate = useNavigate();
   const location = useLocation();
-
 
   const handleLogout = () => {
     username.change(null);
@@ -35,18 +29,16 @@ const Header = () => {
   };
 
   const ShowFind = () => {
-    if (showfind=='show'){
-      setshowfind('hidden')
-    } else setshowfind('show')
-  }
+    if (showfind == "show") {
+      setshowfind("hidden");
+    } else setshowfind("show");
+  };
 
   return (
     <div className="header">
       {/* <div className="header-top">   
 
-      <Link to="/" id='logo'>
-      <img src={logoicon}></img>
-      </Link>
+      
 
       <div className="header-top-mid">
        <img src='https://th.bing.com/th/id/OIP.sfeXXVKmqZ6gjP5Tx3ZaEQHaE7?pid=ImgDet&rs=1'></img>
@@ -61,139 +53,143 @@ const Header = () => {
       </div>
 
       </div> */}
+      {/* <Link to="/" id='logo'>
+      <img src='./../../data/images/logo-1'></img>
+      </Link> */}
 
       <div className="header-bot">
-      <div className="menu">
-        <div className="menu-li" id='list1'>
-      <NavLink to="/" className={handleActive} >
-        Destinations
-      </NavLink>
-      <IoIosArrowDown/>
-      <div className="list-hidden list-1">
-        <div className="list-country">
-        <Link>Viet Nam</Link>
-        <div className="list-mini">
-        <Link>Ha Noi</Link>
-        <Link>SaPa - Lao Cai</Link>
-        <Link>Ha Long</Link>
-        <Link>Tay Nguyen</Link>
-        <Link>Da Nang</Link>
-        <Link>Sai Gon</Link>
-        <Link>Hai Phong</Link>
-        <Link>Binh Lieu</Link>
-        <Link>Hue</Link>
-        <Link>Vung Tau</Link>
+        <div className="logo">
+         <img src="./../../data/images/logo-1.png" ></img>
         </div>
+        <div className="menu">
+          <div className="menu-li" id="list1">
+            <NavLink to="/" className={handleActive}>
+              Destinations
+            </NavLink>
+            <IoIosArrowDown />
+            <div className="list-hidden list-1">
+              <div className="list-country">
+                <Link>Viet Nam</Link>
+                <div className="list-mini">
+                  <Link>Ha Noi</Link>
+                  <Link>SaPa - Lao Cai</Link>
+                  <Link>Ha Long</Link>
+                  <Link>Tay Nguyen</Link>
+                  <Link>Da Nang</Link>
+                  <Link>Sai Gon</Link>
+                  <Link>Hai Phong</Link>
+                  <Link>Binh Lieu</Link>
+                  <Link>Hue</Link>
+                  <Link>Vung Tau</Link>
+                </div>
+              </div>
+
+              <div className="list-country">
+                <Link>Lao</Link>
+                <div className="list-mini">
+                  <Link>Luang Prabang</Link>
+                  <Link>Viang Chan</Link>
+                </div>
+              </div>
+
+              <div className="list-country">
+                <Link>Thai Lan</Link>
+                <div className="list-mini">
+                  <Link>Bangkok</Link>
+                  <Link>Koh Panyee</Link>
+                  <Link>Pattaya</Link>
+                </div>
+              </div>
+
+              <div className="list-country">
+                <Link>Campuchia</Link>
+                <div className="list-mini">
+                  <Link>Angkor Wat, Angkor Thom</Link>
+                  <Link>Phnom Penh</Link>
+                  <Link>Battambang</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="menu-li">
+            <NavLink to="/TravelStyles" className={handleActive}>
+              Travel Styles
+            </NavLink>
+            <IoIosArrowDown />
+            <div className="list-hidden list-2">
+              <a>CLASSIC</a>
+              <a>FAMILY</a>
+              <a>BEACH</a>
+              <a>SHORT TRIPS</a>
+              <a>CULINARY</a>
+              <a>ADVENTURE</a>
+              <a>CRUISES</a>
+            </div>
+          </div>
+
+          <div className="menu-li">
+            <NavLink to="/SpecialDeals" className={handleActive}>
+              Special Deals
+            </NavLink>
+            <IoIosArrowDown />
+          </div>
+          <div className="menu-li">
+            <NavLink to="/About" className={handleActive}>
+              About
+            </NavLink>
+            <IoIosArrowDown />
+          </div>
+          <div className="menu-li">
+            <NavLink to="/News" className={handleActive}>
+              News
+            </NavLink>
+            <IoIosArrowDown />
+          </div>
         </div>
 
-        <div className="list-country">
-        <Link>Lao</Link>
-        <div className="list-mini">
-        <Link>Luang Prabang</Link>
-        <Link>Viang Chan</Link>
-        </div>
-        </div>
-
-        <div className="list-country">
-        <Link>Thai Lan</Link>
-        <div className="list-mini">
-        <Link>Bangkok</Link>
-        <Link>Koh Panyee</Link>
-        <Link>Pattaya</Link>
-        </div>
+        <div className="phone-find-container" onClick={() => ShowFind()}>
+          <div className="find-container">
+            <FaSearchLocation className="header-icon" />
+            <button type="text" className="find-btn">
+              Search
+            </button>
+          </div>
+          <div className="phone-container">
+            <FaPhoneAlt className="header-icon" />
+            <span>03.548.65073</span>
+          </div>
         </div>
 
-        <div className="list-country">
-        <Link>Campuchia</Link>
-        <div className="list-mini">
-        <Link>Angkor Wat, Angkor Thom</Link>
-        <Link>Phnom Penh</Link>
-        <Link>Battambang</Link>
-        </div>
-        </div>
-
-      </div>
-      </div>
-      <div className="menu-li">
-      <NavLink to="/TravelStyles" className={handleActive}>
-        Travel Styles
-      </NavLink>
-      <IoIosArrowDown/>
-      <div className="list-hidden list-2">
-        <a>CLASSIC</a>
-        <a>FAMILY</a>
-        <a>BEACH</a>
-        <a>SHORT TRIPS</a>
-        <a>CULINARY</a>
-        <a>ADVENTURE</a>
-        <a>CRUISES</a>
-      </div>
-      </div>
-
-      <div className="menu-li">
-      <NavLink to="/SpecialDeals" className={handleActive}>
-        Special Deals
-      </NavLink>
-      <IoIosArrowDown/>
-      </div>
-      <div className="menu-li">
-      <NavLink to="/About" className={handleActive}>
-        About
-      </NavLink>
-      <IoIosArrowDown/>
-      </div>
-      <div className="menu-li">
-      <NavLink to="/News" className={handleActive}>
-        News
-      </NavLink>
-      <IoIosArrowDown/>
-      </div>
-      </div>
-      
-      <div className="phone-find-container" onClick={()=>ShowFind()}>
-        <div className="find-container">
-        <FaSearchLocation className="header-icon"/>
-        <button type='text' className="find-btn">Search</button>
-        </div>
-        <div className="phone-container">
-          <FaPhoneAlt className="header-icon"/>
-          <span>03.548.65073</span>
-        </div>
-
-      </div>
-      
-      { username.username ?
-      (
-        <div className="log">
-          
-          <BsSuitHeart/>
-          {username.username.admin?<GrUserAdmin/>:<BsPerson/>}
-          <Link to='/User' className="sign">{username.username.userName}</Link>
-          <button className="logout" onClick={handleLogout}>Đăng xuất</button>
-          <Link to="/Dangtin" className="post" >Đăng tin</Link>
-        </div>
-
-      ) :
-      (
-        <div className="log">
-        {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
+        {username.username ? (
+          <div className="log">
+            <BsSuitHeart />
+            {username.username.admin ? <GrUserAdmin /> : <BsPerson />}
+            <Link to="/User" className="sign">
+              {username.username.userName}
+            </Link>
+            <button className="logout" onClick={handleLogout}>
+              Đăng xuất
+            </button>
+            <Link to="/Dangtin" className="post">
+              Đăng tin
+            </Link>
+          </div>
+        ) : (
+          <div className="log">
+            {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
         <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
-        <Link to='/' >For User</Link>
-        <IoIosArrowForward/>
-        </div>
-        
-      )
-      }     
-
+            <Link to="/">For User</Link>
+            <IoIosArrowForward />
+          </div>
+        )}
       </div>
       {/* <div className="find-area" id={showfind}>
         <p>Search: </p>
         <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
       </div> */}
-      <Search id={showfind}/>
-    
+      <Search id={showfind} />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
