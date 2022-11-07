@@ -9,7 +9,7 @@
 }
 .contain-block{
     display: flex;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .skew-x {
     width: 200px;
@@ -37,8 +37,9 @@ background-size: cover;
     background-size: cover;
 }
 .text{
+    padding: 0 10px;
     height: 400px;
-    width: 52%;
+    width: 50%;
 }
 .big-title{
     text-align: center;

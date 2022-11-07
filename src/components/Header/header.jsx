@@ -1,13 +1,10 @@
 import React, { useEffect ,useState ,useContext } from "react";
 import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
-import LogoHome from '../Logo';
-import SearchC from "../Search";
 import {BsSuitHeart,BsPerson,BsHeart} from 'react-icons/bs';
 import {GrUserAdmin} from 'react-icons/gr';
 import './header.css';
-import { UserContext } from '../HeadFoot';
+import { UserContext } from '../Layout';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
-import logoicon from './../Logo/logo-alt.png';
 import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
 import Search from "../Find/Search";
 
@@ -16,7 +13,7 @@ import Search from "../Find/Search";
 
 const Header = () => {
 
-  const [showfind,setshowfind]=useState('show');
+  const [showfind,setshowfind]=useState('hidden');
 
   const username = useContext(UserContext);
   console.log(username);
@@ -120,13 +117,13 @@ const Header = () => {
       </NavLink>
       <IoIosArrowDown/>
       <div className="list-hidden list-2">
-        <a>CLASSIC</a>
-        <a>FAMILY</a>
-        <a>BEACH</a>
-        <a>SHORT TRIPS</a>
-        <a>CULINARY</a>
-        <a>ADVENTURE</a>
-        <a>CRUISES</a>
+        <Link to='/Classic'>CLASSIC</Link>
+        <Link to='/Family'>FAMILY</Link>
+        <Link to='/Beach'>BEACH</Link>
+        <Link to='ShortTrips'>SHORT TRIPS</Link>
+        <Link to='Culinary'>CULINARY</Link>
+        <Link to='Adventure'>ADVENTURE</Link>
+        <Link to='Cruises'>CRUISES</Link>
       </div>
       </div>
 
@@ -191,6 +188,11 @@ const Header = () => {
         <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
       </div> */}
       <Search id={showfind}/>
+      <div className="log-container">
+
+        <Link to='/' className="log-link">Log in</Link>
+        <Link to='/' className="log-link">Sign-in</Link>
+      </div>
     
     </div>
   )
