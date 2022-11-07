@@ -32,7 +32,7 @@ const Login = () => {
         type:'json'
     });
      console.log(response.data);
-     if (response.status==200) {toast.success('Đăng nhập  thành công')};
+     if (response.status === 200) {toast.success('Đăng nhập thành công')};
      username.change(response.data);
    }
     

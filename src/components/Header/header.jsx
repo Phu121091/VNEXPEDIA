@@ -35,11 +35,11 @@ const Header = () => {
       <div className="header-top">   
 
       <Link to="/" id='logo'>
-      <img src={logoicon}></img>
+      <img src={logoicon} alt="logo"></img>
       </Link>
 
       <div className="header-top-mid">
-       <img src='https://th.bing.com/th/id/OIP.sfeXXVKmqZ6gjP5Tx3ZaEQHaE7?pid=ImgDet&rs=1'></img>
+       <img src='https://th.bing.com/th/id/OIP.sfeXXVKmqZ6gjP5Tx3ZaEQHaE7?pid=ImgDet&rs=1' alt="language"></img>
        <p>VietNamese</p>
        <p>MyAudley</p>
        <BsHeart/>
