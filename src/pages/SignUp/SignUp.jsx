@@ -1,59 +1,59 @@
-
+import './SignUp.css'
 
 function SignUp() {
     return ( <div>
-                <form action="" method="post" class="form" id="form-1">
-            <h3 class="heading">Thành viên đăng ký</h3>
-            <p class="desc">
-                Cùng nhau học lập trình miễn phí tại F8 ❤️
+            <form action="" method="post" className="form" id="form-1">
+            <h3 className="heading">Create new Account</h3>
+            <p className="desc">
+                Hi My Friends
             </p>
 
-            <div class="spacer"></div>
+            <div className="spacer"></div>
 
-            <div class="form-group">
-                <label for="fullname" class="form-label">Tên đầy đủ</label>
-                <input id="fullname" name="fullname" type="text" placeholder="VD: Thế Việt" class="form-control" />
-                <span class="form-message"></span>
+            <div className="form-group">
+                <label for="fullname" className="form-label">Full name</label>
+                <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyen A" className="form-control" />
+                <span className="form-message"></span>
             </div>
 
-            <div class="form-group">
-                <label for="mail" class="form-label">Email</label>
-                <input id="mail" name="mail" type="text" placeholder="VD: viet02092001@gmail.com" class="form-control" />
-                <span class="form-message"></span>
+            <div className="form-group">
+                <label for="mail" className="form-label">Email</label>
+                <input id="mail" name="mail" type="text" placeholder="VD: NguyenA@gmail.com" className="form-control" />
+                <span className="form-message"></span>
             </div>
 
-            <div class="form-group">
-                <label for="password" class="form-label">Mật khẩu</label>
-                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" />
-                <span class="form-message"></span>
+            <div className="form-group">
+                <label for="password" className="form-label">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" className="form-control" />
+                <span className="form-message"></span>
             </div>
 
-            <div class="form-group">
-                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-                <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Nhập lại mật khẩu" class="form-control" />
-                <span class="form-message"></span>
+            <div className="form-group">
+                <label for="password_confirmation" className="form-label">Password Again</label>
+                <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Nhập lại mật khẩu" className="form-control" />
+                <span className="form-message"></span>
             </div>
 
-            <div class="form-group">
-                <label for="gender" class="form-label">Giới tính</label>
-                <div class="form-sex">
-                    <div class="sex">
-                        <label class="sex-m" for="">Nam</label>
-                        <input name="gender" type="radio" value="male" class="form-control" />
+            <div className="form-group">
+                <label for="gender" className="form-label">Sex</label>
+                <div className="form-sex">
+                    <div className="sex">
+                        <label className="sex-m" for="">Male</label>
+                        <input name="gender" type="radio" value="male" className="form-control" />
                     </div>
-                    <div class="sex">
-                        <label class="sex-m" for="">Nữ</label>
-                        <input name="gender" type="radio" value="female" class="form-control" />
+                    <div className="sex">
+                        <label className="sex-m" for="">Female</label>
+                        <input name="gender" type="radio" value="female" className="form-control" />
                     </div>
-                    <div class="sex">
-                        <label class="sex-m" for="">Khác</label>
-                        <input name="gender" type="radio" value="orther" class="form-control" />
+                    <div className="sex">
+                        <label className="sex-m" for="">Other</label>
+                        <input name="gender" type="radio" value="orther" className="form-control" />
                     </div>
                 </div>
-                <span class="form-message"></span>
+                <span className="form-message"></span>
             </div>
 
-            <button class="form-submit">Đăng ký</button>
+            <button className="form-submit">Sign Up</button>
         </form>
     </div> );
 }

@@ -133,8 +133,13 @@ a{
     width: 65%;
 }
 .list-2{
-    left: 26.8%;
+    left: 26%;
     width: 15%;
+}
+
+.list-3 {
+    left: 38%;
+    width: 15%; 
 }
 
 /* find - phone css */
@@ -191,6 +196,11 @@ a{
 }
 
 /* Log in css */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
 .log-container{
     display: flex;
     flex-direction: column;
@@ -198,11 +208,12 @@ a{
     position: absolute;
     right: 0%;
     /* bottom: 0%; */
+
+    transition: width 2s;
 }
 .log-link{
     padding: 10px;
     background-color: #4d726d;
     border-bottom:1px solid gray;
     color: white;  
-    
 }

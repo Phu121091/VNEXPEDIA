@@ -10,6 +10,7 @@ import LG5 from '../../data/images/logo5.png';
 import LG6 from '../../data/images/logo6.png';
 import LG7 from '../../data/images/logo7.png';
 import logoicon from './../Logo/logo-alt.png';
+import { BsFacebook, BsGoogle, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -64,6 +65,12 @@ const Footer = () => {
     <div className='list-app'></div>
 
     <div className='end-footer'>
+      <div className='contact'>
+        <BsFacebook className='contact-option'/>
+        <BsTwitter className='contact-option'/>
+        <BsGoogle className='contact-option'/>
+      </div>
+
       <p>Copyright @ 2022 RedQ, Inc.</p>
     </div>
     </div>

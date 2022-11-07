@@ -7,13 +7,14 @@ import { UserContext } from '../Layout';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
 import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
 import Search from "../Find/Search";
-
+import LogIn from "../../pages/LogIn/LogIn";
 
 
 
 const Header = () => {
 
   const [showfind,setshowfind]=useState('hidden');
+  const [showLog, setShowLog] = useState(false);
 
   const username = useContext(UserContext);
   console.log(username);
@@ -32,10 +33,18 @@ const Header = () => {
   };
 
   const ShowFind = () => {
-    if (showfind=='show'){
+    if (showfind==='show'){
       setshowfind('hidden')
     } else setshowfind('show')
   }
+
+  const ShowLog = () => {
+    if (showLog === true){
+      setShowLog(false)
+    } else setShowLog(true)
+  }
+
+
 
   return (
     <div className="header">
@@ -132,6 +141,13 @@ const Header = () => {
         Special Deals
       </NavLink>
       <IoIosArrowDown/>
+      <div className="list-hidden list-3">
+        <Link to='/Welles'>WELLES</Link>
+        <Link to='/Mice'>M.I.C.E</Link>
+        <Link to='/Lyxury'>LUXURY</Link>
+        <Link to='/Heritages'>HERITAGES</Link>
+        <Link to='/Reponsible'>REPONSIBLE TRAVEL</Link>
+      </div>
       </div>
       <div className="menu-li">
       <NavLink to="/About" className={handleActive}>
@@ -158,41 +174,40 @@ const Header = () => {
         </div>
 
       </div>
-      
-      { username.username ?
-      (
-        <div className="log">
+
+        {username.username ?
+        (
+          <div className="log">
+            
+            <BsSuitHeart/>
+            {username.username.admin?<GrUserAdmin/>:<BsPerson/>}
+            <Link to='/User' className="sign">{username.username.userName}</Link>
+            <button className="logout" onClick={handleLogout}>Đăng xuất</button>
+            <Link to="/Dangtin" className="post" >Đăng tin</Link>
+          </div>
+  
+        ) :
+        (
+          <div className="log" onClick={() => ShowLog()}>
+            {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
+            <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
+            <Link to='/' >For User</Link>
+          <IoIosArrowForward/>
+          </div>
           
-          <BsSuitHeart/>
-          {username.username.admin?<GrUserAdmin/>:<BsPerson/>}
-          <Link to='/User' className="sign">{username.username.userName}</Link>
-          <button className="logout" onClick={handleLogout}>Đăng xuất</button>
-          <Link to="/Dangtin" className="post" >Đăng tin</Link>
-        </div>
-
-      ) :
-      (
-        <div className="log">
-        {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
-        <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
-        <Link to='/' >For User</Link>
-        <IoIosArrowForward/>
-        </div>
-        
-      )
-      }     
-
+        )
+        }
       </div>
       {/* <div className="find-area" id={showfind}>
         <p>Search: </p>
         <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
       </div> */}
       <Search id={showfind}/>
-      <div className="log-container">
+      {showLog && <div className="log-container">     
 
-        <Link to='/' className="log-link">Log in</Link>
-        <Link to='/' className="log-link">Sign-in</Link>
-      </div>
+        <Link to='./LogIn' className="log-link">Log in</Link>
+        <Link to='/SignUp' className="log-link">Sign-in</Link>
+      </div>}
     
     </div>
   )
