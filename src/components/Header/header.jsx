@@ -14,6 +14,7 @@ import Search from "../Find/Search";
 const Header = () => {
 
   const [showfind,setshowfind]=useState('hidden');
+  const [showlog,setshowlog]=useState('hidden');
 
   const username = useContext(UserContext);
   console.log(username);
@@ -36,6 +37,14 @@ const Header = () => {
       setshowfind('hidden')
     } else setshowfind('show')
   }
+
+  const Hidenlogin = () => {
+    if (showlog=='show'){
+      setshowlog('hidden')
+    }else{
+      setshowlog('show')
+    }
+   }
 
   return (
     <div className="header">
@@ -175,7 +184,7 @@ const Header = () => {
         <div className="log">
         {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
         <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
-        <Link to='/' >For User</Link>
+        <Link to='/' onClick={()=>Hidenlogin()} >For User</Link>
         <IoIosArrowForward/>
         </div>
         
@@ -188,8 +197,7 @@ const Header = () => {
         <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
       </div> */}
       <Search id={showfind}/>
-      <div className="log-container">
-
+      <div className="log-container" id={showlog} >
         <Link to='/' className="log-link">Log in</Link>
         <Link to='/' className="log-link">Sign-in</Link>
       </div>
