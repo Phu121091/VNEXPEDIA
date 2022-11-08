@@ -4,15 +4,6 @@
   justify-content: center;
 }
 
-.log-in {
-  background: #fff;
-  padding: 24px 48px 24px 48px;
-  border-radius: 2px;
-  margin: 24px;
-  align-self: center;
-  box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
-}
-
 .form {
   width: 460px;
   min-height: 100px;
@@ -80,57 +71,10 @@
     font-size: 0.8rem;
 }
 
-.form-report {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .form-message {
   font-size: 1.2rem;
   line-height: 1.6rem;
   padding: 4px 0 0;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 20;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 12px;
-  margin-left: 2px;
-}
-
-.slider:before {
-  display: flex;
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 2px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50%;
 }
 
 .sex {
@@ -165,13 +109,6 @@
   top: 0;
 }
 
-.slider-remem {
-  color: #332f2f;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-left: -50px;
-}
-
 .form-submit {
   outline: none;
   background-color: #12877c;
@@ -184,12 +121,6 @@
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-hr {
-  size: 1px;
-  width: 37%;
-  border: 0.001rem solid #ebebeb;
 }
 
 .image {

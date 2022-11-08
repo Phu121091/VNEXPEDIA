@@ -1,7 +1,7 @@
 import './SignUp.css'
 
 function SignUp() {
-    return ( <div>
+    return ( <div className='wrapper'>
             <form action="" method="post" className="form" id="form-1">
             <h3 className="heading">Create new Account</h3>
             <p className="desc">
