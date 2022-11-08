@@ -27,7 +27,7 @@ const Layout = ({children}) => {
       <div className="empty"></div>
       {children}
       <Footer/>
-
+    
     </UserContext.Provider>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import './home.css';
 import SlideBig from './Slide';
@@ -7,8 +8,32 @@ import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
 import AseanMap from './AseanMap/AseanMap';
 import OurStory from './Ourstory/Ourstory';
+import axios from "axios";
   
 const Home = () => {
+  
+//   const [sellList, setSellList] = useState([]);
+//     const [isLoading, setIsLoading] = useState(false);
+//   const callApi =async()=>{
+//     setIsLoading(true);
+
+//      const response = await axios({
+//          method: 'POST',
+//          url: 'https://dieuhanh.vatco.vn/MobileLogin/GetFullText?id=3925',
+//          type: 'json'
+//      });
+  
+//      if(response.status === 200){
+//       setSellList(response.data);
+//   }
+//   console.log(sellList);
+//   setIsLoading(false);     
+// }
+// useEffect(()=>{
+//   callApi();    
+  
+// },[]);
+// console.log(sellList);
 
   return (
     <div> 
@@ -16,6 +41,13 @@ const Home = () => {
         <div className="slide-container">
           <SlideBig/>
         </div>
+       {/* {sellList.length>0&& 
+        <div className='test'>
+          {sellList}
+        </div>
+        } */}
+
+
 {/* Suggest tour */}
         <div className='suggest-tour'>
         <div className="suggest-title">Suggested Simples Tours</div>

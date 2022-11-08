@@ -17,10 +17,8 @@ import Luxury from './pages/SpecialDeals/Luxury/Luxury';
 import MICE from './pages/SpecialDeals/MICE/MICE';
 import Heritages from './pages/SpecialDeals/Heritages/Heritages';
 import ReponsibleTravel from './pages/SpecialDeals/ReponsibleTravel/ReponsibleTravel';
-
-
-
-
+import LogIn from "./pages/LogIn/LogIn";
+import SignUp from "./pages/SignUp/SignUp";
 
 
 
@@ -42,7 +40,9 @@ function App() {
       <Route path="/Adventure" element={<Adventure />} />
       <Route path="/Cruises" element={<Cruises/>} />
       <Route path="/Welles" element={<Welles/>}/>
-     </Routes>
+      <Route path="/LogIn" element={<LogIn />} />
+      <Route path="/SignUp" element={<SignUp />} />
+      </Routes>
       </Layout> 
       </BrowserRouter>
       <ToastContainer/>

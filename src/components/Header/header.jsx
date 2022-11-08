@@ -7,6 +7,7 @@ import { UserContext } from '../Layout';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
 import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
 import Search from "../Find/Search";
+import Buttontop from "../ButtonTop/Buttontop";
 
 
 
@@ -14,6 +15,7 @@ import Search from "../Find/Search";
 const Header = () => {
 
   const [showfind,setshowfind]=useState('hidden');
+  const [showlog,setshowlog] =useState('hidden');
 
   const username = useContext(UserContext);
   console.log(username);
@@ -36,33 +38,38 @@ const Header = () => {
       setshowfind('hidden')
     } else setshowfind('show')
   }
+  const Showlog = () => {
+    {showlog=='show'?setshowlog('hidden'):setshowlog('show')}
+  }
+
+  const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          setShowButton(true);
+        } else {
+          setShowButton(false);
+        }
+      });
+    }, []);
+    console.log(showButton);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // for smoothly scrolling
+        });
+      };
+
 
   return (
     <div className="header">
-      {/* <div className="header-top">   
-
-      <Link to="/" id='logo'>
-      <img src={logoicon}></img>
-      </Link>
-
-      <div className="header-top-mid">
-       <img src='https://th.bing.com/th/id/OIP.sfeXXVKmqZ6gjP5Tx3ZaEQHaE7?pid=ImgDet&rs=1'></img>
-       <p>VietNamese</p>
-       <p>MyAudley</p>
-       <BsHeart/>
-      </div>
-
-      <div className="callus">
-        <button>BUY A TRIP</button>
-        <p>Call Us : 0354865073</p>
-      </div>
-
-      </div> */}
 
       <div className="header-bot">
       <div className="menu">
         <div className="menu-li" id='list1'>
-      <NavLink to="/" className={handleActive} >
+      <NavLink to="/" id={handleActive} >
         Destinations
       </NavLink>
       <IoIosArrowDown/>
@@ -112,7 +119,7 @@ const Header = () => {
       </div>
       </div>
       <div className="menu-li">
-      <NavLink to="/TravelStyles" className={handleActive}>
+      <NavLink to="/TravelStyles" id={handleActive}>
         Travel Styles
       </NavLink>
       <IoIosArrowDown/>
@@ -128,19 +135,19 @@ const Header = () => {
       </div>
 
       <div className="menu-li">
-      <NavLink to="/SpecialDeals" className={handleActive}>
+      <NavLink to="/SpecialDeals" id={handleActive}>
         Special Deals
       </NavLink>
       <IoIosArrowDown/>
       </div>
       <div className="menu-li">
-      <NavLink to="/About" className={handleActive}>
+      <NavLink to="/About" id={handleActive}>
         About
       </NavLink>
       <IoIosArrowDown/>
       </div>
       <div className="menu-li">
-      <NavLink to="/News" className={handleActive}>
+      <NavLink to="/News" id={handleActive}>
         News
       </NavLink>
       <IoIosArrowDown/>
@@ -172,9 +179,7 @@ const Header = () => {
 
       ) :
       (
-        <div className="log">
-        {/* <Link to="/Dangki" className="sign">Đăng kí</Link>
-        <Link to="/Dangnhap" className="login">Đăng nhập</Link> */}
+        <div className="log"  onClick={()=>Showlog()}>
         <Link to='/' >For User</Link>
         <IoIosArrowForward/>
         </div>
@@ -182,17 +187,16 @@ const Header = () => {
       )
       }     
 
+      <Buttontop/>
       </div>
-      {/* <div className="find-area" id={showfind}>
-        <p>Search: </p>
-        <input type='text' placeholder="Viet Nam" style={{marginTop:0}} />
-      </div> */}
-      <Search id={showfind}/>
-      <div className="log-container">
 
-        <Link to='/' className="log-link">Log in</Link>
-        <Link to='/' className="log-link">Sign-in</Link>
+      <Search id={showfind}/>
+      <div className="log-container" id={showlog}>
+
+        <Link to='/LogIn' className="log-link">Log in</Link>
+        <Link to='/SignUp' className="log-link">Sign-in</Link>
       </div>
+    
     
     </div>
   )

@@ -34,6 +34,7 @@ a{
     justify-content: center;
     align-items: center;
     flex: 1;
+    position: relative;
 }
 .menu-li a{
     margin-right: 5px;
@@ -45,7 +46,7 @@ a{
     color: white;
     transition: 0.5s;
 }
-.menu-li:hover{
+.menu-li:hover ,#active{
     background-color: #699d95;
 }
 .menu-li:hover svg{   
@@ -98,15 +99,13 @@ a{
 }
 .list-hidden{
     display:none;
-    padding: 1% 3%;
-    width: 65%;
     position: absolute;
-    top: 101%;
+    top: 100%;
     z-index: 10;
     background-color: #4d726d;
     
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
@@ -117,9 +116,11 @@ a{
     color: white;
 }
 .list-mini{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom: 1px solid gray;
 }
 .list-mini a{
     padding: 10px;
@@ -129,13 +130,27 @@ a{
     border: 1px solid white;
 }
 .list-1{
-    left: 15%;
-    width: 65%;
+    left:0%;
+    width: 600px;
+    padding: 10px;
 }
 .list-2{
-    left: 26.8%;
-    width: 15%;
+    left: 0%;
+    width: 200px;
 }
+.list-2 a{
+    width: 100%;
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    padding: 10px;
+}
+.list-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+    
 
 /* find - phone css */
 .phone-find-container{

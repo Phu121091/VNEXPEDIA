@@ -8,7 +8,7 @@ const Special = () => {
         <div className='item-big'>
             <div className='box-tittle'>
             <h1 className='box-h1'>WELLES</h1>
-            <hr></hr>
+            <hr className='box-hr'/>
             </div>
             <p className='box-p'>{Text}</p>
         </div>
@@ -18,14 +18,14 @@ const Special = () => {
             <div className='item-small is1' >
             <div className='box-tittle'>
             <h1 className='box-h1'>M.I.C.E</h1>
-            <hr></hr>
+            <hr className='box-hr'/>
             </div>
             <p className='box-p'>{Text}</p>
             </div>
             <div className='item-small is2'>
             <div className='box-tittle'>
             <h1 className='box-h1'>LUXURY</h1>
-            <hr></hr>
+            <hr className='box-hr'/>
             </div>
             <p className='box-p'>{Text}</p>
             </div>
@@ -35,14 +35,14 @@ const Special = () => {
             <div className='item-small is3'>
             <div className='box-tittle'>
             <h1 className='box-h1'>HERITAGES</h1>
-            <hr></hr>
+            <hr className='box-hr'/>
             </div>
             <p className='box-p'>{Text}</p>
             </div>
             <div className='item-small is4'>
             <div className='box-tittle'>
             <h1 className='box-h1'>REPONSIBLE TRAVEL</h1>
-            <hr></hr>
+            <hr className='box-hr'/>
             </div>
             <p className='box-p'>{Text}</p>
             </div>
