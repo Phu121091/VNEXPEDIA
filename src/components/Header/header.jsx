@@ -6,6 +6,7 @@ import './header.css';
 import { UserContext } from '../Layout';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
 import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
+import {BiPaperPlane} from 'react-icons/bi';
 import Search from "../Find/Search";
 import Buttontop from "../ButtonTop/Buttontop";
 
@@ -17,22 +18,23 @@ const Header = () => {
   const [showfind,setshowfind]=useState('hidden');
   const [showlog,setshowlog] =useState('hidden');
 
-  const username = useContext(UserContext);
-  console.log(username);
+  const user = useContext(UserContext);
+  console.log(user);
 
   const navigate = useNavigate();
   const location = useLocation();
 
 
   const handleLogout = () => {
-    username.change(null);
+    user.change(null);
     navigate("/log-in", { replace: true });
   };
-
+//design link active
   const handleActive = ({ isActive }) => {
     return isActive && "active";
   };
 
+// Show-hide Log and Search
   const ShowFind = () => {
     if (showfind=='show'){
       setshowfind('hidden')
@@ -41,27 +43,6 @@ const Header = () => {
   const Showlog = () => {
     {showlog=='show'?setshowlog('hidden'):setshowlog('show')}
   }
-
-  const [showButton, setShowButton] = useState(false);
-
-    useEffect(() => {
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          setShowButton(true);
-        } else {
-          setShowButton(false);
-        }
-      });
-    }, []);
-    console.log(showButton);
-
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth' // for smoothly scrolling
-        });
-      };
-
 
   return (
     <div className="header">
@@ -165,14 +146,17 @@ const Header = () => {
         </div>
 
       </div>
+      <Link to='/ShopInfor' className="tour-shoped-icon">
+      <BiPaperPlane/><span>{user.shoped.length}</span>
+      </Link>
       
-      { username.username ?
+      { user.username ?
       (
         <div className="log">
           
           <BsSuitHeart/>
-          {username.username.admin?<GrUserAdmin/>:<BsPerson/>}
-          <Link to='/User' className="sign">{username.username.userName}</Link>
+          {user.username.admin?<GrUserAdmin/>:<BsPerson/>}
+          <Link to='/User' className="sign">{user.username.userName}</Link>
           <button className="logout" onClick={handleLogout}>Đăng xuất</button>
           <Link to="/Dangtin" className="post" >Đăng tin</Link>
         </div>
@@ -180,7 +164,7 @@ const Header = () => {
       ) :
       (
         <div className="log"  onClick={()=>Showlog()}>
-        <Link to='/' >For User</Link>
+        <p>For User</p>
         <IoIosArrowForward/>
         </div>
         

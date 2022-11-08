@@ -13,7 +13,7 @@
     width: 85%;
     height: auto;
     background-color: white;
-    margin-left: 8%;
+    margin: 0 auto;
     position: relative;
     border-radius: 6px;
 }
@@ -31,20 +31,20 @@
     font-size: 40px;
 }
 .page-up{
-    width: 50%;
+    width: 100%;
     background-color: #fff;
-    position: relative;
+    /* position: absolute; */
     z-index: 1;
     margin: 0 auto;
     box-shadow: 0 0 0.5rem 0 rgb(0 0 0 / 16%);
-    padding: 1% 1% 1% 1%;
+    padding: 1% 20%;
     height: auto;
-    top: -10%;
+    /* top: -5%; */
     border-radius: 6px;
 }
 .up{
     height: auto;
-    border: solid 1px;
+    /* border: solid 1px; */
     padding: 0 0 2% 0;
 }
 .classic-title{

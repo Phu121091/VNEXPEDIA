@@ -19,6 +19,7 @@ import Heritages from './pages/SpecialDeals/Heritages/Heritages';
 import ReponsibleTravel from './pages/SpecialDeals/ReponsibleTravel/ReponsibleTravel';
 import LogIn from "./pages/LogIn/LogIn";
 import SignUp from "./pages/SignUp/SignUp";
+import ShopInfor from "./pages/ShopInfor/ShopInfor";
 
 
 
@@ -42,6 +43,7 @@ function App() {
       <Route path="/Welles" element={<Welles/>}/>
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/SignUp" element={<SignUp />} />
+      <Route path="/ShopInfor" element={<ShopInfor />} />
       </Routes>
       </Layout> 
       </BrowserRouter>

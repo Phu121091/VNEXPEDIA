@@ -63,12 +63,15 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.log a{
+.log p{
     margin: 4px;
     padding: 11px ;
     background-color: #008489;
     border-radius: 4px;
+    color: aliceblue;
+    
 }
 .log svg:hover{
     color:cornflowerblue;
