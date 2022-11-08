@@ -1,0 +1,28 @@
+.body-shorttrips{
+    background-image: url('./../../../data/images/banner/Shorttrips.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+.shorttrips-container{
+    width: 80%;
+    height: 3000px;
+    background-color: white;
+    margin-left: 10%;
+    position: relative;
+    border-radius: 6px;
+}
+.shorttrips-content{
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 140px;
+}
+.detail-shorttrips{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
