@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Heritages = () => {
+ 
   return (
     <div>Heritages</div>
   )

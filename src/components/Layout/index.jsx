@@ -9,25 +9,25 @@ const UserContext = React.createContext({});
 const Layout = ({children}) => {
 
   const [username,setUsername] = useState(null);
-  const [filtervalue,setFV] = useState({});
+  const [shoped,setShoped] = useState({});
   const navigate = useNavigate();
 
   const change = (d) =>{
     setUsername(d);
   }
-  const setfilter = (d) =>{
-    setFV(d);
+  const Shoping = (d) =>{
+    setShoped(d);
 
   }
   
   console.log(username);
   return (
-    <UserContext.Provider value={{username,change,filtervalue,setfilter}}>
+    <UserContext.Provider value={{username,change,shoped,setShoped}}>
       <Header/>
       <div className="empty"></div>
       {children}
       <Footer/>
-
+    
     </UserContext.Provider>
   )
 }
