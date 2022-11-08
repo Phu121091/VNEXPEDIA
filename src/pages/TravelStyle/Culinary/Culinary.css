@@ -1,0 +1,28 @@
+.body-culinary{
+    background-image: url('./../../../data/images/banner/Culinary.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+.culinary-container{
+    width: 80%;
+    height: 3000px;
+    background-color: white;
+    margin-left: 10%;
+    position: relative;
+    border-radius: 6px;
+}
+.culinary-content{
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 140px;
+}
+.detail-culinary{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
