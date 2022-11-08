@@ -9,9 +9,9 @@ import Img5 from '../../data/images/banner/6.jpg';
 import './Slide.css';
 
 const contentStyle = {
-    height: '800px',
+    height: '700px',
     color: '#fff',
-    lineHeight: '800px',
+    lineHeight: '500px',
     textAlign: 'center',
 }
 //   const slideImages = [
@@ -39,21 +39,21 @@ const contentStyle = {
 
 const SlideBig = () => {
   return (
-    <Carousel effect="fade" autoplay duration='2s'>
+    <Carousel effect="fade" autoplay duration='5s'>
     <div>
-      <div style={contentStyle} className='slide-item1'>1</div>
+      <div style={contentStyle} className='slide-item1'></div>
     </div>
     <div>
-      <div style={contentStyle} className='slide-item2'>2</div>
+      <div style={contentStyle} className='slide-item2'></div>
     </div>
     <div>
-      <div style={contentStyle} className='slide-item3'>3</div>
+      <div style={contentStyle} className='slide-item3'></div>
     </div>
     <div>
-      <div style={contentStyle} className='slide-item4'>4</div>
+      <div style={contentStyle} className='slide-item4'></div>
     </div>
     <div>
-      <div style={contentStyle} className='slide-item5'>5</div>
+      <div style={contentStyle} className='slide-item5'></div>
     </div>
   </Carousel>
   )

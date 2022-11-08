@@ -1,22 +1,3 @@
-.each-slide{
-    width: 1000px;
-}
-.homelist h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: linear-gradient(to right,gray 10%, white);
-}
-.homemainlist{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.homeimg{
-    display: flex;
-    justify-content: center;
-}
 .slide-container{
     position: relative;
     width: 100%;
@@ -26,7 +7,7 @@
 }
 #search{
     position: absolute;
-    top:30%;
+    bottom:100%;
 }
 
 .suggest-tour{
@@ -43,8 +24,14 @@
     font-size: 110px;
 }
 .suggest-main{
-    font-family: 'Shalimar', cursive;
-    font-size: 32px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 26px;
+    font-style: oblique;
+}
+.suggest-main-title{
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 26px;
     font-style: oblique;
 }
 .hr{
@@ -53,4 +40,22 @@
     color: rgb(41, 91, 41);
     border-radius: 50%;
     margin: 0 auto;
+}
+
+.slide-text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    
+}
+.st-h1,.st-p{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+}
+.st-h1{
+    font-size: 80px;
+}
+.st-p{
+    font-size: 30px;
 }

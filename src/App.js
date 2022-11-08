@@ -1,58 +1,50 @@
 import React, { useState, useEffect, useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layouts from "./components/Layout";
-import HeadFoot from "./components/HeadFoot";
-import './App.css';
+import Layout from "./components/Layout";
+import "./App.css";
 import Home from "./pages/Home/home";
-import Contacts from './pages/Contacts';
-import HouseLease from './pages/HouseLease';
-import HouseSell from './pages/HouseSell';
-import News from './pages/News';
-import Project from './pages/Project';
-import InforItem from "./pages/InforItem";
-import Signin from "./pages/Account/Signin";
-import Login from "./pages/Account/login";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import New from "./pages/News/new";
-import Newitem from "./pages/News/news";
-import User from "./pages/User";
-import CreatePost from "./pages/Post";
-import Sellfind from "./pages/Find/Sellfind";
-import Rentfind from "./pages/Find/Rentfind";
+import Classic from "./pages/TravelStyle/Classic/Classic";
+import Family from "./pages/TravelStyle/Family/Family";
+import Beach from "./pages/TravelStyle/Beach/Beach";
+import ShortTrips from "./pages/TravelStyle/ShortTrips/ShortTrips";
+import Culinary from "./pages/TravelStyle/Culinary/Culinary";
+import Adventure from "./pages/TravelStyle/Adventure/Adventure";
+import Cruises from "./pages/TravelStyle/Cruises/Cruises";
+import Welles from "./pages/SpecialDeals/Welles/Welles";
+import Luxury from "./pages/SpecialDeals/Luxury/Luxury";
+import MICE from "./pages/SpecialDeals/MICE/MICE";
+import Heritages from "./pages/SpecialDeals/Heritages/Heritages";
+import ReponsibleTravel from "./pages/SpecialDeals/ReponsibleTravel/ReponsibleTravel";
+import LogIn from "./pages/LogIn/LogIn";
+import SignUp from "./pages/SignUp/SignUp";
 
-
-
-
- 
 function App() {
-
   return (
-    <div className="App" >
+    <div className="App">
       <BrowserRouter>
-      <HeadFoot>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Nhadatban" element={<HouseSell />} />
-      <Route path="/Nhadatchothue" element={<HouseLease />} />
-      <Route path="/Duan" element={<Project />} />
-      <Route path="/Tintuc" element={<News />} />
-      <Route path="/Danhba" element={<Contacts />} />
-      <Route path="/Create_New_Post" element={<CreatePost />} />
-      <Route path=":id" element={<InforItem />} />
-      <Route path="/Tin" element={<Newitem/>}>
-      <Route path=":id" element={<New/>} />
-      </Route>
-      <Route path="/Timkiemban" element={<Sellfind/>}/>
-      <Route path="/Timkiemthue" element={<Rentfind/>}/>
-      <Route path="/User" element={<User/>}/>
-      <Route path="/Dangki" element={<Signin/>}/>
-      <Route path="/Dangnhap" element={<Login/>}/>
-      <Route path="/Dangtin" element={<CreatePost/>}/>
-      </Routes>
-      </HeadFoot>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Classic" element={<Classic />} />
+            <Route path="/Family" element={<Family />} />
+            <Route path="/Beach" element={<Beach />} />
+            <Route path="/ShortTrips" element={<ShortTrips />} />
+            <Route path="/Culinary" element={<Culinary />} />
+            <Route path="/Adventure" element={<Adventure />} />
+            <Route path="/Cruises" element={<Cruises />} />
+            <Route path="/Welles" element={<Welles />} />
+            <Route path="/Mice" element={<MICE />} />
+            <Route path="/Luxury" element={<Luxury />} />
+            <Route path="/Hertiages" element={<Heritages />} />
+            <Route path="/Reponsible" element={<ReponsibleTravel />} />
+            <Route path="/LogIn" element={<LogIn />} />
+            <Route path="/SignUp" element={<SignUp />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 }
