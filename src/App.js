@@ -19,6 +19,7 @@ import Heritages from "./pages/SpecialDeals/Heritages/Heritages";
 import ReponsibleTravel from "./pages/SpecialDeals/ReponsibleTravel/ReponsibleTravel";
 import LogIn from "./pages/LogIn/LogIn";
 import SignUp from "./pages/SignUp/SignUp";
+import TravelInfo from "./pages/TravelInfo/TravelInfo";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/Reponsible" element={<ReponsibleTravel />} />
             <Route path="/LogIn" element={<LogIn />} />
             <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/TravelInfo" element={<TravelInfo />} />
           </Routes>
         </Layout>
       </BrowserRouter>
