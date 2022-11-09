@@ -1,6 +1,5 @@
 import React from "react";
 import "./Classic.css";
-import SimpleSlider from "./../../../components/Slider/Slider"
 
 const Classic = () => {
   return (
@@ -29,7 +28,78 @@ const Classic = () => {
           </div>
         </div>
         <div className="simpletour-1">
-          <SimpleSlider/>
+          <div className="top-container">
+            <div className="box-1"></div>
+            <div className="boxsub-1">
+              <div className="title-box">
+                  HA LONG 4 DAY - 3 NIGHT
+              </div>
+            </div>
+          </div>
+          <div className="text-highlight">
+            Vietnam is a country situating on the Indochina Peninsula in
+            Southeast Asia where is the home to many fantastic destinations for
+            travellers to come and explore. With a long coastline of 3,260 km
+            stretching from the North to the South, the S-shaped country is
+            praised with the vast beauty of natural landscapes, diverse culture,
+            heart-warming locals, and awesome gastronomy.
+          </div>
+        </div>
+        <div className="simpletour-1">
+          <div className="top-container">
+          <div className="boxsub-1">highlight</div>
+            <div className="box-2"></div>
+          </div>
+          <div className="text-highlight">
+            Vietnam is a country situating on the Indochina Peninsula in
+            Southeast Asia where is the home to many fantastic destinations for
+            travellers to come and explore. With a long coastline of 3,260 km
+            stretching from the North to the South, the S-shaped country is
+            praised with the vast beauty of natural landscapes, diverse culture,
+            heart-warming locals, and awesome gastronomy.
+          </div>
+        </div>
+        <div className="simpletour-1">
+          <div className="top-container">
+            <div className="box-3"></div>
+            <div className="boxsub-1">highlight</div>
+          </div>
+          <div className="text-highlight">
+            Vietnam is a country situating on the Indochina Peninsula in
+            Southeast Asia where is the home to many fantastic destinations for
+            travellers to come and explore. With a long coastline of 3,260 km
+            stretching from the North to the South, the S-shaped country is
+            praised with the vast beauty of natural landscapes, diverse culture,
+            heart-warming locals, and awesome gastronomy.
+          </div>
+        </div>
+        <div className="simpletour-1">
+          <div className="top-container">
+          <div className="boxsub-1">highlight</div>
+            <div className="box-4"></div>
+          </div>
+          <div className="text-highlight">
+            Vietnam is a country situating on the Indochina Peninsula in
+            Southeast Asia where is the home to many fantastic destinations for
+            travellers to come and explore. With a long coastline of 3,260 km
+            stretching from the North to the South, the S-shaped country is
+            praised with the vast beauty of natural landscapes, diverse culture,
+            heart-warming locals, and awesome gastronomy.
+          </div>
+        </div>
+        <div className="simpletour-1">
+          <div className="top-container">
+            <div className="box-5"></div>
+            <div className="boxsub-1">highlight</div>
+          </div>
+          <div className="text-highlight">
+            Vietnam is a country situating on the Indochina Peninsula in
+            Southeast Asia where is the home to many fantastic destinations for
+            travellers to come and explore. With a long coastline of 3,260 km
+            stretching from the North to the South, the S-shaped country is
+            praised with the vast beauty of natural landscapes, diverse culture,
+            heart-warming locals, and awesome gastronomy.
+          </div>
         </div>
       </div>
     </div>
