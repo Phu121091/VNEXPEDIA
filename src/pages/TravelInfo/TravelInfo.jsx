@@ -4,25 +4,30 @@ import './TravelInfo.css'
 function TravelInfo() {
     return ( <div className="wrapper">
         <div className="banner-info">
-            <h1 className='banner-title'>DISCOVER THE HIGHLIGHTS OF VIETNAM</h1>
-            <p className='banner-security'>Private & Tailored Tour</p>
-            <p className='banner-price'>FROM <b>UD$1111</b> PP</p>
-            <button className='banner-options'>CHOOSE BUDGET & ENQUIRY NOW</button>
-            <div className="banner-time">
-                <div>
-                    <span>COUNTRY</span>
-                    <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>1</span>
-                </div>
-                <div>
-                    <span>DISTINATIONS</span>
-                    <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>7</span>
-                </div>
-                <div>
-                    <span>DAYS</span>
-                    <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>12</span>
-                </div>
+            <div className="banner-img">
+                <img className='ban-img' src="https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-tour/vietnam-highlights854-1389-570.jpg" alt="" />
             </div>
-            <BsArrowDown className='banner-arrow'/>
+            <div className='banner-content'>
+                <h1 className='banner-title'>DISCOVER THE HIGHLIGHTS OF VIETNAM</h1>
+                <p className='banner-security'>Private & Tailored Tour</p>
+                <p className='banner-price'>FROM <b>UD$1111</b> PP</p>
+                <button className='banner-options'>CHOOSE BUDGET & ENQUIRY NOW</button>
+                <div className="banner-time">
+                    <div>
+                        <span>COUNTRY</span>
+                        <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>1</span>
+                    </div>
+                    <div>
+                        <span>DISTINATIONS</span>
+                        <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>7</span>
+                    </div>
+                    <div>
+                        <span>DAYS</span>
+                        <span style={{'tooltipSize': '30px', 'tooltipWeight': 600}}>12</span>
+                    </div>
+                </div>
+                <BsArrowDown className='banner-arrow'/>
+            </div>
         </div>
         <div className="travel-address">
             <div className='travel-intro'>

@@ -130,7 +130,7 @@
 
 .slider-remem {
     color: #332f2f;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: 500;
     margin-left: -50px;
 }

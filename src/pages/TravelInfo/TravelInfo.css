@@ -5,20 +5,41 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 25px 0 0 0;
 }
 
 .banner-info {
+  width: 100%;
+}
+
+.banner-img {
+  position: relative;
   align-items: center;
   justify-content: center;
-  color: #fff;
   width: 100%;
-  height: 500px;
-  font-family: Montserrat, Arial, sans-serif;
-  background-image: url(https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-tour/vietnam-highlights854-1389-570.jpg);
-  backdrop-filter: blur(10px);
+  background: center center;
+}
+
+.ban-img {
+  width: 100%;
+  height: 550px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.5);
+}
+
+.banner-content {
+  font-family: Montserrat, Arial, sans-serif;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 20px;
+  bottom: 0;
+  color: #fff;
+  padding: 15px;
 }
 
 .banner-title {
@@ -26,7 +47,6 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 35px;
-  margin-top: 110px;
 }
 
 .banner-security {
@@ -66,12 +86,14 @@
   padding: 0 12px 12px 12px;
 }
 
-div > span > span {
+div > span:nth-child(2) {
   font-size: 30px;
   font-weight: 600;
 }
 
 .banner-arrow {
+  display: flex;
+  align-items: center;
   font-size: 24px;
 }
 
@@ -84,7 +106,7 @@ div > span > span {
 
 .travel-intro {
   width: 85%;
-  margin: 40px auto auto auto;
+  margin: 15px auto auto auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -150,8 +172,8 @@ div > span > span {
 }
 
 .address {
-    text-align: center;
-    flex-direction: column;
+  text-align: center;
+  flex-direction: column;
 }
 
 .address-detail {
@@ -211,22 +233,22 @@ div > span > span {
 }
 
 .icon-tooltip {
-    font-size: 40px;
-    margin: 10px 8px 10px 8px;
+  font-size: 40px;
+  margin: 10px 8px 10px 8px;
 }
 
 .icon-font {
-    color: #c3bdbd;
+  color: #c3bdbd;
 }
 
-.icon-tooltip>span {
-    display: none;
+.icon-tooltip > span {
+  display: none;
 }
 
 .iconfont:hover {
-    text-decoration: none;
-    opacity: .8;
-    color: #d0b316;
+  text-decoration: none;
+  opacity: 0.8;
+  color: #d0b316;
 }
 
 .paragraph {
