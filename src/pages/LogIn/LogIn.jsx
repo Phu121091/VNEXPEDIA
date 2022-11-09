@@ -40,7 +40,7 @@ function LogIn() {
     
                     <button className="form-submit">Login</button>
 
-                    <span className="form-options"><hr />Or log in with<hr /></span>
+                    <span className="form-options"><hr className="log-hr"/>Or log in with<hr className="log-hr"/></span>
 
                     <div className="form-option-group">
                         <button className="form-option">Facebook</button>

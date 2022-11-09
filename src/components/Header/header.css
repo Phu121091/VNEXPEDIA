@@ -12,7 +12,7 @@ a{
     z-index: 2;
     position: relative;
     width: 100%;
-    background-color: #4d726d;
+    background:rgb(0, 0, 1,0.5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +35,7 @@ a{
     align-items: center;
     flex: 1;
     position: relative;
+    transition: 1s;
 }
 .menu-li a{
     margin-right: 5px;
@@ -47,7 +48,7 @@ a{
     transition: 0.5s;
 }
 .menu-li:hover ,#active{
-    background-color: #699d95;
+    background:rgb(0, 0, 1,0.2);
 }
 .menu-li:hover svg{   
     -moz-transform: scale(1, -1);
@@ -68,7 +69,7 @@ a{
 .log p{
     margin: 4px;
     padding: 11px ;
-    background-color: #008489;
+    background:rgb(4, 4, 4,0.5);;
     border-radius: 4px;
     color: aliceblue;
     
@@ -99,20 +100,23 @@ a{
 } */
 .menu-li:hover .list-hidden{
     display: flex;
+    top:100%;
+}
+.menu-li:hover .link-f{
+    color: darkgoldenrod;
 }
 .list-hidden{
     display:none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     z-index: 10;
-    background-color: #4d726d;
-    
+    background:rgb(0, 0, 1,0.7);;
+    transition: 1s;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     border-bottom-right-radius:10px;
-    border-bottom-left-radius:10px;
-    transition: 1s;   
+    border-bottom-left-radius:10px;  
 }
 .list-hidden a{
     margin:10px 0px ;
@@ -139,7 +143,7 @@ a{
 }
 .list-2{
     left: 0%;
-    width: 200px;
+    width: 100%;
 }
 .list-2 a{
     width: 100%;
@@ -178,10 +182,10 @@ a{
     
 }
 .find-container:hover{
-    border:1px solid cornflowerblue;
+    border:1px solid darkgoldenrod;
 }
 .find-container:hover svg,.find-container:hover button{
-    color:cornflowerblue;
+    color:darkgoldenrod;
 }
 .header-icon{
     color: white;
@@ -203,7 +207,7 @@ a{
     transition: 0.5s;
 }
 #hidden{
-    top:-100%;
+    top:-200%;
     position: absolute;
     transition: 0.5s;
 }
@@ -219,7 +223,7 @@ a{
 }
 .log-link{
     padding: 10px;
-    background-color: #4d726d;
+    background:rgb(4, 4, 4,0.5);;
     border-bottom:1px solid gray;
     color: white;  
     

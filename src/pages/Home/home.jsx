@@ -8,6 +8,7 @@ import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
 import AseanMap from './AseanMap/AseanMap';
 import OurStory from './Ourstory/Ourstory';
+import Hot from './Hot';
 import axios from "axios";
   
 const Home = () => {
@@ -41,16 +42,14 @@ const Home = () => {
         <div className="slide-container">
           <SlideBig/>
         </div>
-       {/* {sellList.length>0&& 
-        <div className='test'>
-          {sellList}
-        </div>
-        } */}
-
-
+{/* hot tour        */}
+        <Hot/>
 {/* Suggest tour */}
         <div className='suggest-tour'>
-        <div className="suggest-title">Suggested Simples Tours</div>
+        <div className="suggest-title">Suggested Simples Tours
+        <hr className='hrt'/>
+        </div>
+        
       <p className="suggest-main">
         The tours featured throughout our website are intended to give you ideas
         for what's possible when you travel with us. Treat them simply as
@@ -67,8 +66,10 @@ const Home = () => {
       <OurStory/>
 {/* Special tour */}
       <div className='suggest-tour'>
-        <div className="suggest-title">Special Tour</div>
-      <p className="suggest-main-title">
+        <div className="suggest-title">Special Tour
+        <hr className='hrt'/>
+        </div>
+      <p className="suggest-main">
       We know that every traveller is different, so our experts have
           meticulously designed different Vietnam touring styles to help you
           explore Vietnam in a way that suits you the best. Want to see the

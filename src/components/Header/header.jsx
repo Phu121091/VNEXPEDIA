@@ -50,7 +50,7 @@ const Header = () => {
       <div className="header-bot">
       <div className="menu">
         <div className="menu-li" id='list1'>
-      <NavLink to="/" id={handleActive} >
+      <NavLink to="/" id={handleActive} className='link-f'>
         Destinations
       </NavLink>
       <IoIosArrowDown/>
@@ -100,7 +100,7 @@ const Header = () => {
       </div>
       </div>
       <div className="menu-li">
-      <NavLink to="/TravelStyles" id={handleActive}>
+      <NavLink to="/TravelStyles" id={handleActive} className='link-f'>
         Travel Styles
       </NavLink>
       <IoIosArrowDown/>
@@ -116,19 +116,19 @@ const Header = () => {
       </div>
 
       <div className="menu-li">
-      <NavLink to="/SpecialDeals" id={handleActive}>
+      <NavLink to="/SpecialDeals" id={handleActive} className='link-f'>
         Special Deals
       </NavLink>
       <IoIosArrowDown/>
       </div>
       <div className="menu-li">
-      <NavLink to="/About" id={handleActive}>
+      <NavLink to="/About" id={handleActive} className='link-f'>
         About
       </NavLink>
       <IoIosArrowDown/>
       </div>
       <div className="menu-li">
-      <NavLink to="/News" id={handleActive}>
+      <NavLink to="/News" id={handleActive} className='link-f'>
         News
       </NavLink>
       <IoIosArrowDown/>

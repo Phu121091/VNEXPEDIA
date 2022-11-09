@@ -24,7 +24,7 @@ const Layout = ({children}) => {
   return (
     <UserContext.Provider value={{username,change,shoped,setShoped}}>
       <Header/>
-      <div className="empty"></div>
+      {/* <div className="empty"></div> */}
       {children}
       <Footer/>
     

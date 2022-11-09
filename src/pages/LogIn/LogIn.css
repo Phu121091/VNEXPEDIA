@@ -168,7 +168,7 @@
       margin: 24px 0 24px 0;
   }
   
-  hr {
+  .log-hr{
       size: 1px;
       width: 37%;
       border: 0.001rem solid #ebebeb;
