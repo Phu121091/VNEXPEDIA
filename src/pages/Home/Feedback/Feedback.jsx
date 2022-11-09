@@ -76,13 +76,14 @@ function Feedback() {
                     </div>
                 </div>
             </div>
-            <button className="arrow left-arrow" id="left">
-                <BsArrowDown />
-            </button>
-
-            <button className="arrow right-arrow" id="right">
-                <BsArrowDown />
-            </button>
+            <div className='arrow'>
+                <button className="left-arrow" id="left" onClick={handlerFeed}>
+                    <BsArrowDown />
+                </button>
+                <button className="right-arrow" id="right" onClick={handlerFeed}>
+                    <BsArrowDown />
+                </button>
+            </div>
         </div>
      );
 }

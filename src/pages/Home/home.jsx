@@ -10,6 +10,7 @@ import OurStory from './Ourstory/Ourstory';
 import Hot from './Hot';
 import axios from "axios";
 import SpecialTour from '../../components/SpecialTour/SpecialTour';
+import SuggestTour from '../../components/SuggestTour/SuggestTour';
   
 const Home = () => {
   
@@ -42,29 +43,15 @@ const Home = () => {
         <div className="slide-container">
           <SlideBig/>
         </div>
-{/* hot tour        */}
+{/* hot tour */} 
         <Hot/>
 {/* Suggest tour */}
-        <div className='suggest-tour'>
-        <div className="suggest-title">Suggested Simples Tours
-        <hr className='hrt'/>
-        </div>
-        
-      <p className="suggest-main">
-        The tours featured throughout our website are intended to give you ideas
-        for what's possible when you travel with us. Treat them simply as
-        inspiration, because your trip will be created individually by one of
-        our specialists to match your tastes and budget.
-      </p>
 
-      <div className="itemSimmple">
-        <Blockgrid />
-      </div>
-      </div>
+      <SuggestTour />
 
       <hr className='hr'/>
       <OurStory/>
-
+{/* Special tour */}
       <SpecialTour />
       <hr className='hr'/>
       <AseanMap/>

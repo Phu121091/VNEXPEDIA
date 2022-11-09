@@ -49,21 +49,6 @@ const Header = () => {
 
       <div className="header-bot">
       <div className="menu">
-      <div className="menu-li">
-      <NavLink to="/TravelStyles" id={handleActive} className='link-f'>
-        MEDIA Corner
-      </NavLink>
-      <IoIosArrowDown/>
-      <div className="list-hidden list-2">
-        <Link to='/Classic'>CLASSIC</Link>
-        <Link to='/Family'>FAMILY</Link>
-        <Link to='/Beach'>BEACH</Link>
-        <Link to='ShortTrips'>SHORT TRIPS</Link>
-        <Link to='Culinary'>CULINARY</Link>
-        <Link to='Adventure'>ADVENTURE</Link>
-        <Link to='Cruises'>CRUISES</Link>
-      </div>
-      </div>
         <div className="menu-li" id='list1'>
       <NavLink to="/" id={handleActive} className='link-f'>
         Destinations
@@ -147,7 +132,6 @@ const Header = () => {
       <NavLink to="/About" id={handleActive} className='link-f'>
         Trip Finder
       </NavLink>
-      <IoIosArrowDown/>
       </div>
       <div className="menu-li">
       <NavLink to="/News" id={handleActive} className='link-f'>
@@ -162,7 +146,17 @@ const Header = () => {
         <Link to='/Affiliates'>AFFILIATES</Link>
       </div>
       </div>
+      <div className="menu-li">
+      <NavLink to="/TravelStyles" id={handleActive} className='link-f'>
+        Media
+      </NavLink>
+      <IoIosArrowDown/>
+      <div className="list-hidden list-2">
+        <Link to='/Blog'>BLOG</Link>
+        <Link to='/Feedback'>FEEDBACK</Link>
       </div>
+      </div>
+    </div>
       
       <div className="phone-find-container" onClick={()=>ShowFind()}>
         <div className="find-container">

@@ -52,7 +52,6 @@ function App() {
       <Route path="/Mice" element={<MICE />} />
       <Route path="/Heritages" element={<Heritages />} />
       <Route path="/Reponsive" element={<ReponsibleTravel />} />
-      <Route path="/Feedback" element={<Feedback />} />
 
       </Routes>
       </Layout> 
