@@ -5,7 +5,7 @@ const BlockcardStyle = styled.div`
     .item-content{
         top:30%;
     }
-    h1{
+    .box-title{
       display:none;
       transition:1s;
     }

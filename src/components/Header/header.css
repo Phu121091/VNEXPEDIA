@@ -1,7 +1,7 @@
 .header{
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1001;
 }
 a{
     text-decoration: none;
@@ -12,7 +12,7 @@ a{
     z-index: 2;
     position: relative;
     width: 100%;
-    background-color: #4d726d;
+    background:rgb(0, 0, 1,0.5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,6 +34,8 @@ a{
     justify-content: center;
     align-items: center;
     flex: 1;
+    position: relative;
+    transition: 1s;
 }
 .menu-li a{
     margin-right: 5px;
@@ -45,8 +47,8 @@ a{
     color: white;
     transition: 0.5s;
 }
-.menu-li:hover{
-    background-color: #699d95;
+.menu-li:hover ,#active{
+    background:rgb(0, 0, 1,0.2);
 }
 .menu-li:hover svg{   
     -moz-transform: scale(1, -1);
@@ -62,12 +64,15 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
-.log a{
+.log p{
     margin: 4px;
     padding: 11px ;
-    background-color: #008489;
+    background:rgb(4, 4, 4,0.5);;
     border-radius: 4px;
+    color: aliceblue;
+    
 }
 .log svg:hover{
     color:cornflowerblue;
@@ -95,31 +100,34 @@ a{
 } */
 .menu-li:hover .list-hidden{
     display: flex;
+    top:100%;
+}
+.menu-li:hover .link-f{
+    color: darkgoldenrod;
 }
 .list-hidden{
     display:none;
-    padding: 1% 3%;
-    width: 65%;
     position: absolute;
-    top: 101%;
+    top: 90%;
     z-index: 10;
-    background-color: #4d726d;
-    
+    background:rgb(0, 0, 1,0.7);;
+    transition: 1s;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     border-bottom-right-radius:10px;
-    border-bottom-left-radius:10px;
-    transition: 1s;   
+    border-bottom-left-radius:10px;  
 }
 .list-hidden a{
     margin:10px 0px ;
     color: white;
 }
 .list-mini{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom: 1px solid gray;
 }
 .list-mini a{
     padding: 10px;
@@ -129,18 +137,27 @@ a{
     border: 1px solid white;
 }
 .list-1{
-    left: 15%;
-    width: 65%;
+    left:0%;
+    width: 600px;
+    padding: 10px;
 }
 .list-2{
-    left: 26%;
-    width: 15%;
+    left: 0%;
+    width: 100%;
 }
-
-.list-3 {
-    left: 38%;
-    width: 15%; 
+.list-2 a{
+    width: 100%;
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    padding: 10px;
 }
+.list-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+    
 
 /* find - phone css */
 .phone-find-container{
@@ -165,10 +182,10 @@ a{
     
 }
 .find-container:hover{
-    border:1px solid cornflowerblue;
+    border:1px solid darkgoldenrod;
 }
 .find-container:hover svg,.find-container:hover button{
-    color:cornflowerblue;
+    color:darkgoldenrod;
 }
 .header-icon{
     color: white;
@@ -190,30 +207,24 @@ a{
     transition: 0.5s;
 }
 #hidden{
-    top:-100%;
+    top:-200%;
     position: absolute;
     transition: 0.5s;
 }
 
 /* Log in css */
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-
-.log-container{
+.log-container {
     display: flex;
     flex-direction: column;
     width: 10%;
     position: absolute;
     right: 0%;
     /* bottom: 0%; */
-
-    transition: width 2s;
 }
 .log-link{
     padding: 10px;
-    background-color: #4d726d;
+    background:rgb(4, 4, 4,0.5);;
     border-bottom:1px solid gray;
     color: white;  
+    
 }

@@ -20,8 +20,9 @@
     transition: 1s;
 }
 .box-tittle{
+    width: 100%;
     position: absolute;
-    top :40%;
+    bottom: 10%;
 }
 .grid-mini{
     flex: 1;
@@ -70,14 +71,12 @@
 }
 
 .box-h1{
+    text-align: start;
     color: white;
     padding: 10px 10px 0px 10px;
 }
 .item-big .box-h1{
     font-size: 40px;
-}
-hr{
-    width: 80%;
 }
 .box-p{
     color: white;
@@ -101,3 +100,4 @@ hr{
     rgba(0, 0, 0, 0.15) 0px 4px 2px, rgba(0, 0, 0, 0.15) 0px 8px 4px,
     rgba(0, 0, 0, 0.15) 0px 16px 8px, rgba(0, 0, 0, 0.15) 0px 32px 16px;
 }
+

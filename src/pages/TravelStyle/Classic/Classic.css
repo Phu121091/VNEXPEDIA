@@ -1,0 +1,68 @@
+.body-classic{ 
+    background-image: url('./../../../data/images/banner/20.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+.banner-picture{
+    /* background-image: url('./../../../data/images/banner/20.jpg');
+    background-size: cover; */
+    height: 500px;
+}
+.are-main{
+    width: 85%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 6px;
+}
+.title-classic{
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 140px;
+}
+.detail-classic{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.page-up{
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute; */
+    z-index: 1;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5rem 0 rgb(0 0 0 / 16%);
+    padding: 1% 20%;
+    height: auto;
+    /* top: -5%; */
+    border-radius: 6px;
+}
+.up{
+    height: auto;
+    /* border: solid 1px; */
+    padding: 0 0 2% 0;
+}
+.classic-title{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    margin-top: 5%;
+}
+.classic-detail{
+    text-align: center;
+    padding: 3% 5% 0 5%;
+    font-style: oblique;
+    font-weight: 600;
+}
+.classic-bottom{
+    text-align: center;
+    margin: 5% 5% 3% 5%;
+}
+.simpletour-1{
+    height: auto;
+}

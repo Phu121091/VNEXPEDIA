@@ -43,13 +43,12 @@ const AseanMap = () => {
             <h1>{img.title}</h1>
             <p>{img.infor}</p>
         </div>
+        <FcSearch className='icon-s ics1' title='Viet Nam' onClick={()=>{setImg(listimg[0])}} />
+        <FcSearch className='icon-s ics2' title='Lao' onClick={()=>{setImg(listimg[1])}}/>
+        <FcSearch className='icon-s ics3' title='Camphuchua' onClick={()=>{setImg(listimg[2])}}/>
+        <FcSearch className='icon-s ics4' title='Thai Lan' onClick={()=>{setImg(listimg[3])}}/>
         
-        <FcSearch className='icon-s ics1' onClick={()=>{setImg(listimg[0])}} onMouseEnter={()=>{setmapmini(!mapmini)}}/>
-        <FcSearch className='icon-s ics2' onClick={()=>{setImg(listimg[1])}}/>
-        <FcSearch className='icon-s ics3' onClick={()=>{setImg(listimg[2])}}/>
-        <FcSearch className='icon-s ics4' onClick={()=>{setImg(listimg[3])}}/>
-        
-        {mapmini&&<img src='https://simplemaps.com/static/svg/vn/vn.svg' className='vn-map' />}
+        {(img==listimg[0])?<img src='https://simplemaps.com/static/svg/vn/vn.svg' className='vn-map' />:null}
         
     </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import './home.css';
 import SlideBig from './Slide';
@@ -7,8 +8,33 @@ import Whychoose from './Whychoose/Whychoose';
 import Special from './Special/Special';
 import AseanMap from './AseanMap/AseanMap';
 import OurStory from './Ourstory/Ourstory';
+import Hot from './Hot';
+import axios from "axios";
   
 const Home = () => {
+  
+//   const [sellList, setSellList] = useState([]);
+//     const [isLoading, setIsLoading] = useState(false);
+//   const callApi =async()=>{
+//     setIsLoading(true);
+
+//      const response = await axios({
+//          method: 'POST',
+//          url: 'https://dieuhanh.vatco.vn/MobileLogin/GetFullText?id=3925',
+//          type: 'json'
+//      });
+  
+//      if(response.status === 200){
+//       setSellList(response.data);
+//   }
+//   console.log(sellList);
+//   setIsLoading(false);     
+// }
+// useEffect(()=>{
+//   callApi();    
+  
+// },[]);
+// console.log(sellList);
 
   return (
     <div> 
@@ -16,9 +42,14 @@ const Home = () => {
         <div className="slide-container">
           <SlideBig/>
         </div>
+{/* hot tour        */}
+        <Hot/>
 {/* Suggest tour */}
         <div className='suggest-tour'>
-        <div className="suggest-title">Suggested Simples Tours</div>
+        <div className="suggest-title">Suggested Simples Tours
+        <hr className='hrt'/>
+        </div>
+        
       <p className="suggest-main">
         The tours featured throughout our website are intended to give you ideas
         for what's possible when you travel with us. Treat them simply as
@@ -35,8 +66,10 @@ const Home = () => {
       <OurStory/>
 {/* Special tour */}
       <div className='suggest-tour'>
-        <div className="suggest-title">Special Tour</div>
-      <p className="suggest-main-title">
+        <div className="suggest-title">Special Tour
+        <hr className='hrt'/>
+        </div>
+      <p className="suggest-main">
       We know that every traveller is different, so our experts have
           meticulously designed different Vietnam touring styles to help you
           explore Vietnam in a way that suits you the best. Want to see the

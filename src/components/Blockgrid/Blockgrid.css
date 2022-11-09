@@ -61,15 +61,24 @@
   background-image: url(https://www.huntermountaineering.co.uk/wp-content/uploads/2016/05/P5050015.jpg);
   background-size: cover;
 }
-.itembig h1,
-.itemsmall h1 {
-  color: white;
-  font-family: 'Shalimar', cursive;
+.box-title{
   position: absolute;
-  bottom: 0%;
+  bottom: 5%;
   width: 100%;
-  padding-left: 2%;
   transition: 1s;
+  
+}
+.card-h1{
+  color: white;
+  /* font-family: 'Shalimar', cursive; */
+  font-size: 40px;
+  padding-left: 2%;
+  text-align: start;
+}
+.box-hr{
+  margin-top: 0px;
+  width: 50%;
+  border: 1px solid white;
 }
 .item-content{
   display: block;

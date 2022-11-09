@@ -1,0 +1,60 @@
+.slide {
+    height: 350px;
+}
+.slider-left {
+    width: 50%;
+    padding-left: 10%;
+}
+.slider-left2 {
+    width: 43% !important;
+    padding-left: 10%;
+}
+.slider-right {
+    width: 43% !important;
+    float: right;
+    margin-right: 8%;
+}
+.s1 {
+    background-image: url("./../../data/images/banner/14.jpg");
+    background-size: cover;
+}
+.s2 {
+    background-image: url("./../../data/images/banner/15.jpg");
+    background-size: cover;
+}
+.s3 {
+    background-image: url("./../../data/images/banner/16.jpg");
+    background-size: cover;
+}
+.s4 {
+    background-image: url("./../../data/images/banner/17.jpg");
+    background-size: cover;
+}
+.s5 {
+    background-image: url("./../../data/images/banner/18.jpg");
+    background-size: cover;
+}
+.s6 {
+    background-image: url("./../../data/images/banner/19.jpg");
+    background-size: cover;
+}
+.main-slide {
+    height: auto;
+}
+.slide-are {
+    margin: 4% 0 0 4%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+
+}
+.text-area {
+    width: 55%;
+    padding: 0 0 3% 0;
+}
+.text-end {
+    height: auto;
+}
+.slide-content{
+    width: 50%;
+}
