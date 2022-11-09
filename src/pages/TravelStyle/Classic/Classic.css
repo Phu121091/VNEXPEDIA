@@ -116,7 +116,7 @@
     transition: 1s;
 }
 .box-2{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/17.jpg');
     background-size: cover;
     width: 40%;
@@ -124,7 +124,7 @@
     transition: 1s;
 }
 .box-3{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/18.jpg');
     background-size: cover;
     width: 40%;
@@ -132,7 +132,7 @@
     transition: 1s;
 }
 .box-4{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/19.jpg');
     background-size: cover;
     width: 40%;
@@ -140,7 +140,7 @@
     transition: 1s;
 }
 .box-5{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/20.jpg');
     background-size: cover;
     width: 40%;
@@ -150,7 +150,8 @@
 .title-box{
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 35px;
+    padding: 3% 0 3% 0;
 }
 .title-highlight{
     text-align: left;
@@ -158,6 +159,7 @@
 }
 .read-more{
    display: flex;
+   padding: 1% 0 2% 0;
 }
 .icon-show{
     width: 70%;

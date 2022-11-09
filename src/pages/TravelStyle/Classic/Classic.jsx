@@ -47,7 +47,7 @@ const Classic = () => {
                 <div className="icon-show">
                 </div>
                 <div className="button-show">
-                    <span> Show more..</span>
+                    <a href="/"> Show more..</a>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Classic = () => {
                 <div className="icon-show">
                 </div>
                 <div className="button-show">
-                    <span> Show more..</span>
+                <a href="/"> Show more..</a>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ const Classic = () => {
                 <div className="icon-show">
                 </div>
                 <div className="button-show">
-                    <span> Show more..</span>
+                <a href="/"> Show more..</a>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ const Classic = () => {
                 <div className="icon-show">
                 </div>
                 <div className="button-show">
-                    <span> Show more..</span>
+                <a href="/"> Show more..</a>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@ const Classic = () => {
                 <div className="icon-show">
                 </div>
                 <div className="button-show">
-                    <span> Show more..</span>
+                <a href="/"> Show more..</a>
                 </div>
               </div>
             </div>
