@@ -108,7 +108,7 @@
     width: 60%;
 }
 .box-1{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/16.jpg');
     background-size: cover;
     width: 40%;
@@ -149,6 +149,19 @@
 }
 .title-box{
     text-align: center;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 25px;
+}
+.title-highlight{
+    text-align: left;
+    padding: 0 0 0 5%;
+}
+.read-more{
+   display: flex;
+}
+.icon-show{
+    width: 70%;
+}
+.button-show {
+    width: 30%;
 }

@@ -34,6 +34,22 @@ const Classic = () => {
               <div className="title-box">
                   HA LONG 4 DAY - 3 NIGHT
               </div>
+              <div className="title-highlight">
+                <ul>
+                  <li> Taste Hanoi beer and experience the Vietnamese beer drinking cultur </li>
+                  <li>Take in a cooking demonstration with the chef to learn about Vietnamese food, while floating through Halong Bay </li>
+                  <li> Explore the Imperial Citadel, a UNESCO-designated World Heritage Site, and sample Hue cuisine for its authentic and recognizable flavor </li>
+                  <li> Try the food at the busiest street booths and secret passageways in Hoi An Town in true native fashion while riding a motorcycle. </li>
+                  <li> Experience the vast Mekong Delta's rural villages, farming practices, and fruit orchards by boat through its winding canals while sampling local delicacies.</li>
+                </ul>
+              </div>
+              <div className="read-more">
+                <div className="icon-show">
+                </div>
+                <div className="button-show">
+                    <span> Show more..</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="text-highlight">
@@ -47,7 +63,27 @@ const Classic = () => {
         </div>
         <div className="simpletour-1">
           <div className="top-container">
-          <div className="boxsub-1">highlight</div>
+            <div className="boxsub-1">
+              <div className="title-box">
+                 SAI GON 2 DAY - 3 NIGHT
+              </div>
+              <div className="title-highlight">
+                <ul>
+                  <li> Taste Hanoi beer and experience the Vietnamese beer drinking cultur </li>
+                  <li>Take in a cooking demonstration with the chef to learn about Vietnamese food, while floating through Halong Bay </li>
+                  <li> Explore the Imperial Citadel, a UNESCO-designated World Heritage Site, and sample Hue cuisine for its authentic and recognizable flavor </li>
+                  <li> Try the food at the busiest street booths and secret passageways in Hoi An Town in true native fashion while riding a motorcycle. </li>
+                  <li> Experience the vast Mekong Delta's rural villages, farming practices, and fruit orchards by boat through its winding canals while sampling local delicacies.</li>
+                </ul>
+              </div>
+              <div className="read-more">
+                <div className="icon-show">
+                </div>
+                <div className="button-show">
+                    <span> Show more..</span>
+                </div>
+              </div>
+            </div>
             <div className="box-2"></div>
           </div>
           <div className="text-highlight">
@@ -62,7 +98,27 @@ const Classic = () => {
         <div className="simpletour-1">
           <div className="top-container">
             <div className="box-3"></div>
-            <div className="boxsub-1">highlight</div>
+            <div className="boxsub-1">
+              <div className="title-box">
+                  QUANG NINH 4 DAY - 3 NIGHT
+              </div>
+              <div className="title-highlight">
+                <ul>
+                  <li> Taste Hanoi beer and experience the Vietnamese beer drinking cultur </li>
+                  <li>Take in a cooking demonstration with the chef to learn about Vietnamese food, while floating through Halong Bay </li>
+                  <li> Explore the Imperial Citadel, a UNESCO-designated World Heritage Site, and sample Hue cuisine for its authentic and recognizable flavor </li>
+                  <li> Try the food at the busiest street booths and secret passageways in Hoi An Town in true native fashion while riding a motorcycle. </li>
+                  <li> Experience the vast Mekong Delta's rural villages, farming practices, and fruit orchards by boat through its winding canals while sampling local delicacies.</li>
+                </ul>
+              </div>
+              <div className="read-more">
+                <div className="icon-show">
+                </div>
+                <div className="button-show">
+                    <span> Show more..</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="text-highlight">
             Vietnam is a country situating on the Indochina Peninsula in
@@ -75,7 +131,28 @@ const Classic = () => {
         </div>
         <div className="simpletour-1">
           <div className="top-container">
-          <div className="boxsub-1">highlight</div>
+            
+            <div className="boxsub-1">
+              <div className="title-box">
+                  HA NOI 4 DAY - 3 NIGHT
+              </div>
+              <div className="title-highlight">
+                <ul>
+                  <li> Taste Hanoi beer and experience the Vietnamese beer drinking cultur </li>
+                  <li>Take in a cooking demonstration with the chef to learn about Vietnamese food, while floating through Halong Bay </li>
+                  <li> Explore the Imperial Citadel, a UNESCO-designated World Heritage Site, and sample Hue cuisine for its authentic and recognizable flavor </li>
+                  <li> Try the food at the busiest street booths and secret passageways in Hoi An Town in true native fashion while riding a motorcycle. </li>
+                  <li> Experience the vast Mekong Delta's rural villages, farming practices, and fruit orchards by boat through its winding canals while sampling local delicacies.</li>
+                </ul>
+              </div>
+              <div className="read-more">
+                <div className="icon-show">
+                </div>
+                <div className="button-show">
+                    <span> Show more..</span>
+                </div>
+              </div>
+            </div>
             <div className="box-4"></div>
           </div>
           <div className="text-highlight">
@@ -90,7 +167,27 @@ const Classic = () => {
         <div className="simpletour-1">
           <div className="top-container">
             <div className="box-5"></div>
-            <div className="boxsub-1">highlight</div>
+            <div className="boxsub-1">
+              <div className="title-box">
+                  SAPA 3 DAYS - 2 NIGHT
+              </div>
+              <div className="title-highlight">
+                <ul>
+                  <li> Taste Hanoi beer and experience the Vietnamese beer drinking cultur </li>
+                  <li>Take in a cooking demonstration with the chef to learn about Vietnamese food, while floating through Halong Bay </li>
+                  <li> Explore the Imperial Citadel, a UNESCO-designated World Heritage Site, and sample Hue cuisine for its authentic and recognizable flavor </li>
+                  <li> Try the food at the busiest street booths and secret passageways in Hoi An Town in true native fashion while riding a motorcycle. </li>
+                  <li> Experience the vast Mekong Delta's rural villages, farming practices, and fruit orchards by boat through its winding canals while sampling local delicacies.</li>
+                </ul>
+              </div>
+              <div className="read-more">
+                <div className="icon-show">
+                </div>
+                <div className="button-show">
+                    <span> Show more..</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="text-highlight">
             Vietnam is a country situating on the Indochina Peninsula in
