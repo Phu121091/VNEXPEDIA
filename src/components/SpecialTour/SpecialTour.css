@@ -1,0 +1,34 @@
+.wrapper-special {
+
+}
+
+.suggest-tour{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.suggest-title{
+    text-align: start;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color:black;
+    transition: 0.5s;
+}
+.suggest-title:hover{
+    text-shadow: 5px 0px 5px rgb(0, 0, 0,0.5);
+    color:darkgoldenrod;
+}
+.suggest-title:hover .hrt{
+    width: 60% ;
+}
+.suggest-main{
+    margin-top: 20px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: start;
+}

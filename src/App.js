@@ -48,6 +48,11 @@ function App() {
       <Route path="/ShopInfor" element={<ShopInfor />} />
       <Route path="/TravelInfo" element={<TravelInfo />} />
       <Route path="/Feedback" element={<Feedback />} />
+      <Route path="/Luxury" element={<Luxury />} />
+      <Route path="/Mice" element={<MICE />} />
+      <Route path="/Heritages" element={<Heritages />} />
+      <Route path="/Reponsive" element={<ReponsibleTravel />} />
+      <Route path="/Feedback" element={<Feedback />} />
 
       </Routes>
       </Layout> 
