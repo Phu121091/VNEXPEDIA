@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 1001;
 }
 a{
@@ -122,6 +123,10 @@ a{
     margin:10px 0px ;
     color: white;
 }
+.list-hidden a:hover {
+    color: darkgoldenrod;
+}
+
 .list-mini{
     width: 100%;
     display: flex;
@@ -136,21 +141,41 @@ a{
     margin-right: 5px;
     border: 1px solid white;
 }
+.list-mini a:hover {
+    color: darkgoldenrod;
+}
+
 .list-1{
     left:0%;
     width: 600px;
     padding: 10px;
 }
-.list-2{
+.list-2, .list-3, .list-4 {
     left: 0%;
     width: 100%;
 }
+
 .list-2 a{
     width: 100%;
     border-top: 1px solid grey;
     margin: 0 auto;
     padding: 10px;
 }
+
+.list-3 a{
+    width: 100%;
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.list-4 a{
+    width: 100%;
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .list-country {
     display: flex;
     flex-direction: column;
@@ -163,7 +188,7 @@ a{
 .phone-find-container{
     padding: 5px 0px;
     margin-right: 2%;
-    margin-left: 5%;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,6 +201,7 @@ a{
     justify-content: flex-start;
     align-items: center;
     padding: 0 10px;
+    margin-top: 4px;
 }
 .find-btn{
     color:white;

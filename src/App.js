@@ -20,6 +20,9 @@ import ReponsibleTravel from './pages/SpecialDeals/ReponsibleTravel/ReponsibleTr
 import LogIn from "./pages/LogIn/LogIn";
 import SignUp from "./pages/SignUp/SignUp";
 import ShopInfor from "./pages/ShopInfor/ShopInfor";
+import TravelInfo from "./pages/TravelInfo/TravelInfo";
+import Feedback from "./pages/Home/Feedback/Feedback";
+import TripFinder from "./pages/TripFinder";
 
 
 
@@ -44,6 +47,13 @@ function App() {
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/ShopInfor" element={<ShopInfor />} />
+      <Route path="/TravelInfo" element={<TravelInfo />} />
+      <Route path="/Feedback" element={<Feedback />} />
+      <Route path="/Luxury" element={<Luxury />} />
+      <Route path="/Mice" element={<MICE />} />
+      <Route path="/Heritages" element={<Heritages />} />
+      <Route path="/Reponsive" element={<ReponsibleTravel />} />
+      <Route path='/TripFinder' element={<TripFinder/>}/>
       </Routes>
       </Layout> 
       </BrowserRouter>

@@ -120,20 +120,43 @@ const Header = () => {
         Special Deals
       </NavLink>
       <IoIosArrowDown/>
+      <div className="list-hidden list-3">
+        <Link to='/Welles'>WELLES</Link>
+        <Link to='/Mice'>M.I.C.E</Link>
+        <Link to='/Luxury'>LUXURY</Link>
+        <Link to='/Heritages'>HERITAGES</Link>
+        <Link to='/Reponsible'>REPONSIBLE TRAVEL</Link>
+      </div>
       </div>
       <div className="menu-li">
-      <NavLink to="/About" id={handleActive} className='link-f'>
-        About
+      <NavLink to="/TripFinder" id={handleActive} className='link-f'>
+        Trip Finder
       </NavLink>
-      <IoIosArrowDown/>
       </div>
       <div className="menu-li">
       <NavLink to="/News" id={handleActive} className='link-f'>
-        News
+        Company
       </NavLink>
       <IoIosArrowDown/>
+      <div className="list-hidden list-4">
+        <Link to='/AboutUs'>ABOUT US</Link>
+        <Link to='/Policy'>POLICY</Link>
+        <Link to='/Privacy'>PRIVACY</Link>
+        <Link to='/Payment'>PAYMENT GATEWAY</Link>
+        <Link to='/Affiliates'>AFFILIATES</Link>
       </div>
       </div>
+      <div className="menu-li">
+      <NavLink to="/TravelStyles" id={handleActive} className='link-f'>
+        Media
+      </NavLink>
+      <IoIosArrowDown/>
+      <div className="list-hidden list-2">
+        <Link to='/Blog'>BLOG</Link>
+        <Link to='/Feedback'>FEEDBACK</Link>
+      </div>
+      </div>
+    </div>
       
       <div className="phone-find-container" onClick={()=>ShowFind()}>
         <div className="find-container">

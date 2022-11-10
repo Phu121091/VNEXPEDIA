@@ -11,8 +11,6 @@ const TourBox = ({data}) => {
       people:10
      }
      user.setShoped(itemshoped);
-     
-
   }
 
   return (
