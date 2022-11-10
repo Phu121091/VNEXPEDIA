@@ -1,0 +1,101 @@
+.simpletour-1 {
+    height: auto;
+    background-color: #fff1e100;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin: 3% 0 0 6%;
+    border-radius: 6px;
+    position: relative;
+    
+}
+.text-highlight {
+    height: auto;
+    width: 94%;
+    margin: 0 0 0 3%;
+    border-radius: 6px;
+    padding: 3% 0 2% 0;
+}
+.top-container{
+    overflow: hidden;
+    
+}
+.nor .top-container{
+    display: flex ;
+    flex-direction: row;
+}
+.rev .top-container{
+    display: flex ;
+    flex-direction: row-reverse;
+}
+.box-1:hover{
+    transform: scale(1.2);
+    
+}
+
+.boxsub-1{
+    height: auto;
+    width: 60%;
+}
+.box-1{
+    height: auto;
+    background-image: url('../../data/images/banner/16.jpg');
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.title-box{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    padding: 3% 0 3% 0;
+}
+.title-highlight{
+    text-align: left;
+    padding: 0 6% 0 12%;
+}
+.read-more {
+   display: flex;
+   padding: 1% 0 2% 0;
+}
+.icon-show{
+    width: 70%;
+    padding: 0 0 0 12%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lobster';
+}
+.button-show {
+    width: 30%;
+}
+.money:hover,.day-lenght:hover{
+    color: darkgoldenrod;
+}
+.highlight li:hover{
+    color: darkgoldenrod;
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+@keyframes toleft {
+    0%{
+      left:20%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes toright {
+    0%{
+      left:-20%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.rev{
+    animation: toleft 5s forwards;
+}
+.norev{
+    animation: toright 5s forwards;
+}
