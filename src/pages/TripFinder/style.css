@@ -1,0 +1,77 @@
+.div-img-head{
+    height: 400px;
+    width: 100%;
+    background-image: url('./../../data/images/banner/35.jpg');
+    background-size: cover;
+}
+.finder-text{
+    position: relative;
+    top :45%;
+}
+.finder-h1,.finder-p{
+    color: white;
+}
+
+.finder-container{
+    width: 100%;
+    display: flex;
+}
+.finder-select {
+    width: 20%;
+    margin-left: 10%;
+    padding:10px;
+    text-align: start;
+    height: 80vh;
+    overflow-y: scroll;
+}
+.finder-key{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.finder-icon{
+    font-size: 20px;
+
+}
+.finder-value{
+    padding: 10px;
+    width: 100%;
+}
+/* input[type=text]:focus {
+    border: none !important;
+} */
+.fc{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px ;
+    text-align: center;
+}
+.fc p{
+    margin: auto auto;
+}
+.fl{
+    list-style: none !important;  
+}
+.fl li{
+    width: 100%;
+    border:1px solid silver ;
+    color: silver;
+    padding: 5px;
+    margin-top: 5px;
+}
+.hiddenli{
+    display: none;
+
+}
+.fl li:hover{
+    color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+.pick{
+    color: white !important;
+    background-color:cornflowerblue;
+    border: none;
+}
+
