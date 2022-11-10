@@ -1,7 +1,7 @@
 {
   "name": "projectfinal",
   "version": "0.1.0",
-  "homepage": "http://localhost:3000/",
+  "homepage": "https://localhost:3000/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.13.1",
