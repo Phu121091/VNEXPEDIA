@@ -22,6 +22,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import ShopInfor from "./pages/ShopInfor/ShopInfor";
 import TravelInfo from "./pages/TravelInfo/TravelInfo";
 import Feedback from "./pages/Home/Feedback/Feedback";
+import TripFinder from "./pages/TripFinder";
 
 
 
@@ -52,7 +53,7 @@ function App() {
       <Route path="/Mice" element={<MICE />} />
       <Route path="/Heritages" element={<Heritages />} />
       <Route path="/Reponsive" element={<ReponsibleTravel />} />
-
+      <Route path='/TripFinder' element={<TripFinder/>}/>
       </Routes>
       </Layout> 
       </BrowserRouter>

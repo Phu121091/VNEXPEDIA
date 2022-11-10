@@ -129,7 +129,7 @@ const Header = () => {
       </div>
       </div>
       <div className="menu-li">
-      <NavLink to="/About" id={handleActive} className='link-f'>
+      <NavLink to="/TripFinder" id={handleActive} className='link-f'>
         Trip Finder
       </NavLink>
       </div>
