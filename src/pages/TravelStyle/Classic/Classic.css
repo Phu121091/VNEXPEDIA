@@ -10,10 +10,8 @@
     height: 500px;
 }
 .are-main {
-    width: 80%;
     height: auto;
-    background-color: white;
-    margin-left: 10%;
+    background-color: #f6f4f0 ;
     position: relative;
     border-radius: 6px;
 }
@@ -31,22 +29,10 @@
     font-size: 40px;
 }
 .page-up {
-    width: 50%;
     background-color: #fff;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    box-shadow: 0 0 0.5rem 0 rgb(0 0 0 / 16%);
-    padding: 1% 1% 1% 1%;
-    height: auto;
-    top: -3%;
-    border-radius: 6px;
+    
 }
-.up {
-    height: auto;
-    border: solid 1px;
-    padding: 0 0 2% 0;
-}
+
 .classic-title {
     text-align: center;
     font-size: 30px;
@@ -81,7 +67,7 @@
 .top-container{
     display: flex;
     /* overflow: hidden; */
-    border: double 4px  darkgoldenrod;
+    
 }
 .box-1:hover{
     transform: scale(1.2);
@@ -116,7 +102,7 @@
     transition: 1s;
 }
 .box-2{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/17.jpg');
     background-size: cover;
     width: 40%;
@@ -124,7 +110,7 @@
     transition: 1s;
 }
 .box-3{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/18.jpg');
     background-size: cover;
     width: 40%;
@@ -132,7 +118,7 @@
     transition: 1s;
 }
 .box-4{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/19.jpg');
     background-size: cover;
     width: 40%;
@@ -140,7 +126,7 @@
     transition: 1s;
 }
 .box-5{
-    height: 300px;
+    height: auto;
     background-image: url('./../../../data/images/banner/20.jpg');
     background-size: cover;
     width: 40%;
@@ -150,18 +136,33 @@
 .title-box{
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 35px;
+    padding: 3% 0 3% 0;
 }
 .title-highlight{
     text-align: left;
-    padding: 0 0 0 5%;
+    padding: 0 6% 0 12%;
 }
-.read-more{
+.read-more {
    display: flex;
+   padding: 1% 0 2% 0;
 }
 .icon-show{
     width: 70%;
+    padding: 0 0 0 12%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lobster';
 }
 .button-show {
     width: 30%;
+}
+.money:hover,.day-lenght:hover{
+    color: darkgoldenrod;
+}
+.highlight li:hover{
+    color: darkgoldenrod;
+    transform: scale(1.1);
+    transition: 1s;
+    
 }

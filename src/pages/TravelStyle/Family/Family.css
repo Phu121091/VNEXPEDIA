@@ -1,28 +1,178 @@
-.body-family{
-    background-image: url('./../../../data/images/banner/family.jpg');
+.body-family {
+    background-image: url("./../../../data/images/banner/family.jpg");
     background-attachment: fixed;
     background-size: cover;
     height: auto;
 }
-.family-container{
-    width: 80%;
-    height: 3000px;
-    background-color: white;
-    margin-left: 10%;
-    position: relative;
-    border-radius: 6px;
-}
-.family-content{
+
+.family-content {
     text-align: center;
     padding-top: 3%;
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
     color: white;
     font-size: 140px;
 }
-.detail-family{
-    font-family: 'Pacifico', cursive;
+.detail-family {
+    font-family: "Pacifico", cursive;
     color: white;
     text-align: center;
     font-size: 40px;
     padding-bottom: 3%;
+}
+.family-container {
+    height: auto;
+    background-color: #f6f4f0;
+    position: relative;
+    border-radius: 6px;
+}
+.title-classic {
+    text-align: center;
+    padding-top: 3%;
+    font-family: "Pacifico", cursive;
+    color: white;
+    font-size: 140px;
+}
+.detail-classic {
+    font-family: "Pacifico", cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.page-up {
+    background-color: #fff;
+}
+.title-top {
+    font-family: "Lora", serif;
+    padding: 2% 0 0 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.classic-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Pacifico";
+    margin-top: 5%;
+}
+.classic-detail {
+    text-align: center;
+    padding: 3% 5% 0 5%;
+    font-style: oblique;
+    font-weight: 600;
+}
+.classic-bottom {
+    text-align: center;
+    margin: 5% 5% 3% 5%;
+}
+.simpletour-1 {
+    height: auto;
+    background-color: #fff1e100;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin: 3% 0 0 6%;
+    border-radius: 6px;
+}
+.text-highlight {
+    height: auto;
+    width: 94%;
+    margin: 0 0 0 3%;
+    border-radius: 6px;
+    padding: 3% 0 2% 0;
+}
+.top-container {
+    display: flex;
+    /* overflow: hidden; */
+   
+}
+.box-1:hover {
+    transform: scale(1.2);
+}
+.box-2:hover {
+    transform: scale(1.2);
+}
+.box-3:hover {
+    transform: scale(1.2);
+}
+.box-4:hover {
+    transform: scale(1.2);
+}
+.box-5:hover {
+    transform: scale(1.2);
+}
+.boxsub-1 {
+    height: auto;
+    width: 60%;
+}
+.box-1 {
+    height: auto;
+    background-image: url("./../../../data/images/banner/16.jpg");
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.box-2 {
+    height: auto;
+    background-image: url("./../../../data/images/banner/17.jpg");
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.box-3 {
+    height: auto;
+    background-image: url("./../../../data/images/banner/18.jpg");
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.box-4 {
+    height: auto;
+    background-image: url("./../../../data/images/banner/19.jpg");
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.box-5 {
+    height: auto;
+    background-image: url("./../../../data/images/banner/20.jpg");
+    background-size: cover;
+    width: 40%;
+    background-position: center;
+    transition: 1s;
+}
+.title-box {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    padding: 3% 0 3% 0;
+}
+.title-highlight {
+    text-align: left;
+    padding: 0 6% 0 12%;
+}
+.read-more {
+    display: flex;
+    padding: 1% 0 2% 0;
+}
+.icon-show {
+    width: 70%;
+    padding: 0 0 0 12%;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Lobster";
+}
+.button-show {
+    width: 30%;
+}
+.money:hover,
+.day-lenght:hover {
+    color: darkgoldenrod;
+}
+.highlight li:hover {
+    color: darkgoldenrod;
+    transform: scale(1.1);
+    transition: 1s;
 }
