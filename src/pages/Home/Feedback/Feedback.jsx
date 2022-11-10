@@ -3,51 +3,31 @@ import { useState } from 'react';
 import { BsArrowDown } from 'react-icons/bs';
 import './Feedback.css'
 
-
-
-const handlerFeed = () => {
-    const slides = document.querySelectorAll('.outstanding-feedback')
-    const leftBtn = document.getElementById('left')
-    const rightBtn = document.getElementById('right')
-
-    let activeSlide = 0
-
-    rightBtn.addEventListener('click', () => {
-        activeSlide++
-
-        if(activeSlide > slides.length - 1) {
-            activeSlide = 0
-        }
-
-        setActiveSlide()
-    })
-
-    leftBtn.addEventListener('click', ()  => {
-        activeSlide--
-
-        if(activeSlide < 0) {
-            activeSlide = slides.length - 1
-        }
-
-        setActiveSlide()
-    })
-
-    function setActiveSlide() {
-        slides.forEach((slide) => slide.classList.remove('active'))
-
-        slides[activeSlide].classList.add('active')
-    }
-}
-
 function Feedback() {
 
-    const [useFeed, setUseFeed] = useState(1);
+    const [feed, setFeed] = useState(1);
+
+    const handlerFeedNext = () => {
+        if(feed === 3) {
+            setFeed(1)
+        } else {
+            setFeed(feed + 1)
+        }
+    }
+
+    const handlerFeedPrev = () => {
+        if(feed === 1) {
+            setFeed(3)
+        } else {
+            setFeed(feed - 1)
+        }
+    }
 
     return ( 
         <div className="feedback">
             <h2 className='feedback-title'>Client Feedback</h2>
             <div className='feedback-cont'>
-                <div className="outstanding-feedback active">
+                { feed === 1 && <div className="outstanding-feedback">
                     <div className="feedback-cus">
                         <img className='cus-img' src="https://d2lwt6tidfiof0.cloudfront.net/uploads/googlemap/sapa-188-559-300.jpg" alt="" />
                         <div className="feedback-content">
@@ -60,8 +40,8 @@ function Feedback() {
                             <p className="cus-content">Test</p>
                         </div>
                     </div>
-                </div>
-                <div className="outstanding-feedback">
+                </div>}
+                { feed === 2 && <div className="outstanding-feedback">
                     <div className="feedback-cus">
                         <img className='cus-img' src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
                         <div className="feedback-content">
@@ -71,16 +51,30 @@ function Feedback() {
                     <div className="feedback-cus">
                         <img className='cus-img' src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
                         <div className="feedback-content">
+                            <p className="cus-content">Test feedback</p>
+                        </div>
+                    </div>
+                </div>}
+                { feed === 3 && <div className="outstanding-feedback">
+                    <div className="feedback-cus">
+                        <img className='cus-img' src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
+                        <div className="feedback-content">
+                            <p className="cus-content">Day la danh gia ve cong ty va chuyen di</p>
+                        </div>
+                    </div>
+                    <div className="feedback-cus">
+                        <img className='cus-img' src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
+                        <div className="feedback-content">
                             <p className="cus-content">Feedback</p>
                         </div>
                     </div>
-                </div>
+                </div>}
             </div>
             <div className='arrow'>
-                <button className="left-arrow" id="left" onClick={handlerFeed}>
+                <button className="left-arrow" id="left" onClick={handlerFeedPrev}>
                     <BsArrowDown />
                 </button>
-                <button className="right-arrow" id="right" onClick={handlerFeed}>
+                <button className="right-arrow" id="right" onClick={handlerFeedNext}>
                     <BsArrowDown />
                 </button>
             </div>
